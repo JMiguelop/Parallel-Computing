@@ -1,0 +1,110 @@
+name,derived,postfix,short_descr,long_descr,note,[native,...]
+
+PAPI_L1_DCM,NOT_DERIVED,,"L1D cache misses","Level 1 data cache misses",,L1D:REPL
+PAPI_L1_ICM,NOT_DERIVED,,"L1I cache misses","Level 1 instruction cache misses",,L1I:MISSES
+PAPI_L2_DCM,DERIVED_ADD,,"L2D cache misses","Level 2 data cache misses",,L2_RQSTS:LD_MISS,L2_RQSTS:RFO_MISS
+PAPI_L2_ICM,NOT_DERIVED,,"L2I cache misses","Level 2 instruction cache misses",,L2_RQSTS:IFETCH_MISS
+PAPI_L3_DCM,NOT_DERIVED,,"L3D cache misses","Level 3 data cache misses",
+PAPI_L3_ICM,NOT_DERIVED,,"L3I cache misses","Level 3 instruction cache misses",
+PAPI_L1_TCM,DERIVED_SUB,,"L1 cache misses","Level 1 cache misses",,L2_RQSTS:REFERENCES,L2_RQSTS:PREFETCHES
+PAPI_L2_TCM,NOT_DERIVED,,"L2 cache misses","Level 2 cache misses",,LAST_LEVEL_CACHE_REFERENCES
+PAPI_L3_TCM,NOT_DERIVED,,"L3 cache misses","Level 3 cache misses",,LAST_LEVEL_CACHE_MISSES
+PAPI_CA_SNP,NOT_DERIVED,,"Snoop Requests","Requests for a snoop",
+PAPI_CA_SHR,NOT_DERIVED,,"Ex Acces shared CL","Requests for exclusive access to shared cache line",
+PAPI_CA_CLN,NOT_DERIVED,,"Ex Access clean CL","Requests for exclusive access to clean cache line",
+PAPI_CA_INV,NOT_DERIVED,,"Cache ln invalid","Requests for cache line invalidation",
+PAPI_CA_ITV,NOT_DERIVED,,"Cache ln intervene","Requests for cache line intervention",
+PAPI_L3_LDM,NOT_DERIVED,,"L3 load misses","Level 3 load misses",,MEM_LOAD_RETIRED:L3_MISS
+PAPI_L3_STM,NOT_DERIVED,,"L3 store misses","Level 3 store misses",
+PAPI_BRU_IDL,NOT_DERIVED,,"Branch idle cycles","Cycles branch units are idle",
+PAPI_FXU_IDL,NOT_DERIVED,,"IU idle cycles","Cycles integer units are idle",
+PAPI_FPU_IDL,NOT_DERIVED,,"FPU idle cycles","Cycles floating point units are idle",
+PAPI_LSU_IDL,NOT_DERIVED,,"L/SU idle cycles","Cycles load/store units are idle",
+PAPI_TLB_DM,NOT_DERIVED,,"Data TLB misses","Data translation lookaside buffer misses",,DTLB_MISSES:ANY
+PAPI_TLB_IM,NOT_DERIVED,,"Instr TLB misses","Instruction translation lookaside buffer misses",,ITLB_MISSES:ANY
+PAPI_TLB_TL,DERIVED_ADD,,"Total TLB misses","Total translation lookaside buffer misses",,ITLB_MISSES:ANY,DTLB_MISSES:ANY
+PAPI_L1_LDM,NOT_DERIVED,,"L1 load misses","Level 1 load misses",,L2_RQSTS:LOADS
+PAPI_L1_STM,NOT_DERIVED,,"L1 store misses","Level 1 store misses",,L2_WRITE:RFO_MESI
+PAPI_L2_LDM,NOT_DERIVED,,"L2 load misses","Level 2 load misses",,L2_RQSTS:LD_MISS
+PAPI_L2_STM,NOT_DERIVED,,"L2 store misses","Level 2 store misses",,L2_RQSTS:RFO_MISS
+PAPI_BTAC_M,NOT_DERIVED,,"Br targt addr miss","Branch target address cache misses",
+PAPI_PRF_DM,NOT_DERIVED,,"Data prefetch miss","Data prefetch cache misses",
+PAPI_L3_DCH,NOT_DERIVED,,"L3D cache hits","Level 3 data cache hits",
+PAPI_TLB_SD,NOT_DERIVED,,"TLB shootdowns","Translation lookaside buffer shootdowns",
+PAPI_CSR_FAL,NOT_DERIVED,,"Failed store cond","Failed store conditional instructions",
+PAPI_CSR_SUC,NOT_DERIVED,,"Good store cond","Successful store conditional instructions",
+PAPI_CSR_TOT,NOT_DERIVED,,"Total store cond","Total store conditional instructions",
+PAPI_MEM_SCY,NOT_DERIVED,,"Stalled mem cycles","Cycles Stalled Waiting for memory accesses",
+PAPI_MEM_RCY,NOT_DERIVED,,"Stalled rd cycles","Cycles Stalled Waiting for memory Reads",
+PAPI_MEM_WCY,NOT_DERIVED,,"Stalled wr cycles","Cycles Stalled Waiting for memory writes",
+PAPI_STL_ICY,NOT_DERIVED,,"No instr issue","Cycles with no instruction issue",
+PAPI_FUL_ICY,NOT_DERIVED,,"Max instr issue","Cycles with maximum instruction issue",
+PAPI_STL_CCY,NOT_DERIVED,,"No instr done","Cycles with no instructions completed",
+PAPI_FUL_CCY,NOT_DERIVED,,"Max instr done","Cycles with maximum instructions completed",
+PAPI_HW_INT,NOT_DERIVED,,"Hdw interrupts","Hardware interrupts",
+PAPI_BR_UCN,NOT_DERIVED,,"Uncond branch","Unconditional branch instructions",,BR_INST_EXEC:DIRECT
+PAPI_BR_CN,NOT_DERIVED,,"Cond branch","Conditional branch instructions",,BR_INST_EXEC:COND
+PAPI_BR_TKN,NOT_DERIVED,,"Cond branch taken","Conditional branch instructions taken",,BR_INST_EXEC:TAKEN
+PAPI_BR_NTK,DERIVED_SUB,,"Cond br not taken","Conditional branch instructions not taken",,BR_INST_EXEC:ANY,BR_INST_EXEC:TAKEN
+PAPI_BR_MSP,NOT_DERIVED,,"Cond br mspredictd","Conditional branch instructions mispredicted",,BR_MISP_EXEC:ANY
+PAPI_BR_PRC,DERIVED_SUB,,"Cond br predicted","Conditional branch instructions correctly predicted",,BR_INST_EXEC:COND,BR_MISP_EXEC:COND
+PAPI_FMA_INS,NOT_DERIVED,,"FMAs completed","FMA instructions completed",
+PAPI_TOT_IIS,NOT_DERIVED,,"Instr issued","Instructions issued",,MACRO_INSTS:DECODED
+PAPI_TOT_INS,NOT_DERIVED,,"Instr completed","Instructions completed",,INSTRUCTION_RETIRED
+PAPI_INT_INS,NOT_DERIVED,,"Int instructions","Integer instructions",
+PAPI_FP_INS,NOT_DERIVED,,"FP instructions","Floating point instructions",,FP_COMP_OPS_EXE:SSE_FP
+PAPI_LD_INS,NOT_DERIVED,,"Loads","Load instructions",,MEM_INST_RETIRED:LOADS
+PAPI_SR_INS,NOT_DERIVED,,"Stores","Store instructions",,MEM_INST_RETIRED:STORES
+PAPI_BR_INS,NOT_DERIVED,,"Branches","Branch instructions",,BR_INST_EXEC:ANY
+PAPI_VEC_INS,NOT_DERIVED,,"Vector/SIMD instr","Vector/SIMD instructions (could include integer)",
+PAPI_RES_STL,NOT_DERIVED,,"Stalled res cycles","Cycles stalled on any resource",,RESOURCE_STALLS:ANY
+PAPI_FP_STAL,NOT_DERIVED,,"Stalled FPU cycles","Cycles the FP unit(s) are stalled",
+PAPI_TOT_CYC,NOT_DERIVED,,"Total cycles","Total cycles",,UNHALTED_CORE_CYCLES
+PAPI_LST_INS,DERIVED_ADD,,"L/S completed","Load/store instructions completed",,MEM_INST_RETIRED:LOADS,MEM_INST_RETIRED:STORES
+PAPI_SYC_INS,NOT_DERIVED,,"Syncs completed","Synchronization instructions completed",
+PAPI_L1_DCH,NOT_DERIVED,,"L1D cache hits","Level 1 data cache hits",
+PAPI_L2_DCH,DERIVED_ADD,,"L2D cache hits","Level 2 data cache hits",,L2_RQSTS:LD_HIT,L2_RQSTS:RFO_HIT
+PAPI_L1_DCA,NOT_DERIVED,,"L1D cache accesses","Level 1 data cache accesses",
+PAPI_L2_DCA,NOT_DERIVED,,"L2D cache accesses","Level 2 data cache accesses",,L1D:REPL
+PAPI_L3_DCA,DERIVED_ADD,,"L3D cache accesses","Level 3 data cache accesses",,L2_RQSTS:LD_MISS,L2_RQSTS:RFO_MISS
+PAPI_L1_DCR,NOT_DERIVED,,"L1D cache reads","Level 1 data cache reads",
+PAPI_L2_DCR,NOT_DERIVED,,"L2D cache reads","Level 2 data cache reads",,L2_RQSTS:LOADS
+PAPI_L3_DCR,NOT_DERIVED,,"L3D cache reads","Level 3 data cache reads",,L2_RQSTS:LD_MISS
+PAPI_L1_DCW,NOT_DERIVED,,"L1D cache writes","Level 1 data cache writes",
+PAPI_L2_DCW,NOT_DERIVED,,"L2D cache writes","Level 2 data cache writes",,L2_WRITE:RFO_MESI
+PAPI_L3_DCW,NOT_DERIVED,,"L3D cache writes","Level 3 data cache writes",,L2_RQSTS:RFO_MISS
+PAPI_L1_ICH,NOT_DERIVED,,"L1I cache hits","Level 1 instruction cache hits",,L1I:HITS
+PAPI_L2_ICH,NOT_DERIVED,,"L2I cache hits","Level 2 instruction cache hits",,L2_RQSTS:IFETCH_HIT
+PAPI_L3_ICH,NOT_DERIVED,,"L3I cache hits","Level 3 instruction cache hits",
+PAPI_L1_ICA,NOT_DERIVED,,"L1I cache accesses","Level 1 instruction cache accesses",,L1I:READS
+PAPI_L2_ICA,NOT_DERIVED,,"L2I cache accesses","Level 2 instruction cache accesses",,L2_RQSTS:IFETCHES
+PAPI_L3_ICA,NOT_DERIVED,,"L3I cache accesses","Level 3 instruction cache accesses",,L2_RQSTS:IFETCH_MISS
+PAPI_L1_ICR,NOT_DERIVED,,"L1I cache reads","Level 1 instruction cache reads",,L1I:READS
+PAPI_L2_ICR,NOT_DERIVED,,"L2I cache reads","Level 2 instruction cache reads",,L2_RQSTS:IFETCHES
+PAPI_L3_ICR,NOT_DERIVED,,"L3I cache reads","Level 3 instruction cache reads",,L2_RQSTS:IFETCH_MISS
+PAPI_L1_ICW,NOT_DERIVED,,"L1I cache writes","Level 1 instruction cache writes",
+PAPI_L2_ICW,NOT_DERIVED,,"L2I cache writes","Level 2 instruction cache writes",
+PAPI_L3_ICW,NOT_DERIVED,,"L3I cache writes","Level 3 instruction cache writes",
+PAPI_L1_TCH,NOT_DERIVED,,"L1 cache hits","Level 1 total cache hits",
+PAPI_L2_TCH,DERIVED_SUB,,"L2 cache hits","Level 2 total cache hits",,L2_RQSTS:REFERENCES,L2_RQSTS:MISS
+PAPI_L3_TCH,NOT_DERIVED,,"L3 cache hits","Level 3 total cache hits",
+PAPI_L1_TCA,NOT_DERIVED,,"L1 cache accesses","Level 1 total cache accesses",
+PAPI_L2_TCA,NOT_DERIVED,,"L2 cache accesses","Level 2 total cache accesses",,L2_RQSTS:REFERENCES
+PAPI_L3_TCA,NOT_DERIVED,,"L3 cache accesses","Level 3 total cache accesses",,LAST_LEVEL_CACHE_REFERENCES
+PAPI_L1_TCR,NOT_DERIVED,,"L1 cache reads","Level 1 total cache reads",
+PAPI_L2_TCR,DERIVED_ADD,,"L2 cache reads","Level 2 total cache reads",,L2_RQSTS:LOADS,L2_RQSTS:IFETCHES
+PAPI_L3_TCR,DERIVED_ADD,,"L3 cache reads","Level 3 total cache reads",,L2_RQSTS:LD_MISS,L2_RQSTS:IFETCH_MISS
+PAPI_L1_TCW,NOT_DERIVED,,"L1 cache writes","Level 1 total cache writes",
+PAPI_L2_TCW,NOT_DERIVED,,"L2 cache writes","Level 2 total cache writes",,L2_RQSTS:RFOS
+PAPI_L3_TCW,NOT_DERIVED,,"L3 cache writes","Level 3 total cache writes",,L2_RQSTS:RFO_MISS
+PAPI_FML_INS,NOT_DERIVED,,"FPU multiply","Floating point multiply instructions",
+PAPI_FAD_INS,NOT_DERIVED,,"FPU add","Floating point add instructions",
+PAPI_FDV_INS,NOT_DERIVED,,"FPU divide","Floating point divide instructions",
+PAPI_FSQ_INS,NOT_DERIVED,,"FPU square root","Floating point square root instructions",
+PAPI_FNV_INS,NOT_DERIVED,,"FPU inverse","Floating point inverse instructions",
+PAPI_FP_OPS,DERIVED_ADD,,"FP operations","Floating point operations",,FP_COMP_OPS_EXE:SSE_FP,FP_COMP_OPS_EXE:X87
+PAPI_SP_OPS,DERIVED_POSTFIX,N0|N1|3|*|+|,"SP operations","Floating point operations; optimized to count scaled single precision vector operations",,FP_COMP_OPS_EXE:SSE_SINGLE_PRECISION,FP_COMP_OPS_EXE:SSE_FP_PACKED
+PAPI_DP_OPS,DERIVED_ADD,,"DP operations","Floating point operations; optimized to count scaled double precision vector operations",,FP_COMP_OPS_EXE:SSE_DOUBLE_PRECISION,FP_COMP_OPS_EXE:SSE_FP_PACKED
+PAPI_VEC_SP,NOT_DERIVED,,"SP Vector/SIMD instr","Single precision vector/SIMD instructions",,FP_COMP_OPS_EXE:SSE_FP_PACKED
+PAPI_VEC_DP,NOT_DERIVED,,"DP Vector/SIMD instr","Double precision vector/SIMD instructions",,FP_COMP_OPS_EXE:SSE_FP_PACKED
+PAPI_REF_CYC,NOT_DERIVED,,"Reference cycles","Reference clock cycles",,UNHALTED_REFERENCE_CYCLES

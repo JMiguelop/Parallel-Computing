@@ -1,0 +1,11 @@
+src/trabAAGrupo6.cpp: In function 'int main(int, char**)':
+src/trabAAGrupo6.cpp:146:6: warning: variable 'retval' set but not used [-Wunused-but-set-variable]
+  int retval;
+      ^
+src/trabAAGrupo6.cpp: At global scope:
+src/trabAAGrupo6.cpp:142:15: warning: unused parameter 'argc' [-Wunused-parameter]
+ int main (int argc, char *argv[]) {
+               ^
+src/trabAAGrupo6.cpp:142:32: warning: unused parameter 'argv' [-Wunused-parameter]
+ int main (int argc, char *argv[]) {
+                                ^

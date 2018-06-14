@@ -1,0 +1,1443 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf110
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red234\green234\blue234;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11900\viewh13180\viewkind1
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \cb0 \CocoaLigature0 [a61077@compute-641-15 lab1]$ make\
+g++ -M -O3 -Wall -Wextra -std=c++11 -fopenmp -ftree-vectorize -fopt-info-vec-all  src/lab1.cpp -o build/lab1.d\
+g++ -c -O3 -Wall -Wextra -std=c++11 -fopenmp -ftree-vectorize -fopt-info-vec-all  src/lab1.cpp -o build/lab1.o\
+src/lab1.cpp: In function 'void clearCache()':\
+src/lab1.cpp:29:9: warning: variable 'clearcache' set but not used [-Wunused-but-set-variable]\
+  double clearcache[30000000];\
+         ^\
+src/lab1.cpp: In function 'int main(int, char**)':\
+src/lab1.cpp:112:21: warning: unused variable 'time' [-Wunused-variable]\
+  long long unsigned time;\
+                     ^\
+src/lab1.cpp: At global scope:\
+src/lab1.cpp:111:15: warning: unused parameter 'argc' [-Wunused-parameter]\
+ int main (int argc, char *argv[]) \{\
+               ^\
+src/lab1.cpp:111:32: warning: unused parameter 'argv' [-Wunused-parameter]\
+ int main (int argc, char *argv[]) \{\
+                                ^\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:1076:16: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:1076:16: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:1076:16: note: not vectorized: not enough data-refs in basic block.\
+\
+Analyzing loop at src/lab1.cpp:25\
+src/lab1.cpp:25:28: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:25:28: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:25:28: note: not vectorized: control flow in loop.\
+src/lab1.cpp:25:28: note: bad loop form.\
+src/lab1.cpp:25:28: note: vectorized 0 loops in function.\
+src/lab1.cpp:25:28: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:25:28: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:25:28: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:25:28: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:25:28: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:25:28: note: got vectype for stmt: _6 = MEM[(struct _Vector_base *)_4]._M_impl._M_start;\
+vector(2) long unsigned int\
+src/lab1.cpp:25:28: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:110:9: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:110:9: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:110:9: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:425:33: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:425:33: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:425:33: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:25:28: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:25:28: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:25:28: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:25:28: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:25:28: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:25:28: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:161:33: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:161:33: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:161:33: note: got vectype for stmt: _5 = MEM[(struct _Vector_base *)this_1(D)]._M_impl._M_start;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:161:33: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:110:9: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:110:9: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:110:9: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:425:33: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:425:33: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:425:33: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:28:6: note: vectorized 0 loops in function.\
+src/lab1.cpp:33:1: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:33:1: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:33:1: note: not vectorized: not enough data-refs in basic block.\
+\
+Analyzing loop at src/lab1.cpp:39\
+src/lab1.cpp:39:3: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:39:3: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:39:3: note: not vectorized: control flow in loop.\
+src/lab1.cpp:39:3: note: bad loop form.\
+\
+Analyzing loop at src/lab1.cpp:44\
+src/lab1.cpp:44:3: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:44:3: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:44:3: note: not vectorized: control flow in loop.\
+src/lab1.cpp:44:3: note: bad loop form.\
+src/lab1.cpp:35:20: note: vectorized 0 loops in function.\
+src/lab1.cpp:38:2: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:38:2: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:38:2: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: got vectype for stmt: SR.82_18 = MEM[(long long unsigned int * const &)&sequential_measurements];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: got vectype for stmt: _19 = MEM[(long long unsigned int * const &)&sequential_measurements + 8];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: Detected interleaving MEM[(long long unsigned int * const &)&sequential_measurements] and MEM[(long long unsigned int * const &)&sequential_measurements + 8]\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: Detected interleaving of size 2\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: vect_compute_data_ref_alignment:\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: misalign = 0 bytes of ref MEM[(long long unsigned int * const &)&sequential_measurements]\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: vect_compute_data_ref_alignment:\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: misalign = 8 bytes of ref MEM[(long long unsigned int * const &)&sequential_measurements + 8]\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: not vectorized: failed to find SLP opportunities in basic block.\
+src/lab1.cpp:39:17: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:39:17: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:39:17: note: got vectype for stmt: best_21 = *SR.82_26;\
+vector(2) long long unsigned int\
+src/lab1.cpp:39:17: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:35:20: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:35:20: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:35:20: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:35:20: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:35:20: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:35:20: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:35:20: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:35:20: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:35:20: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:44:36: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:44:36: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:44:36: note: got vectype for stmt: SR.84_16 = MEM[(long long unsigned int * const &)__for_range_8];\
+vector(2) long unsigned int\
+src/lab1.cpp:44:36: note: got vectype for stmt: _9 = MEM[(long long unsigned int * const &)__for_range_8 + 8];\
+vector(2) long unsigned int\
+src/lab1.cpp:44:36: note: === vect_analyze_data_ref_accesses ===\
+src/lab1.cpp:44:36: note: Detected interleaving MEM[(long long unsigned int * const &)__for_range_8] and MEM[(long long unsigned int * const &)__for_range_8 + 8]\
+src/lab1.cpp:44:36: note: Detected interleaving of size 2\
+src/lab1.cpp:44:36: note: === vect_pattern_recog ===\
+src/lab1.cpp:44:36: note: === vect_analyze_data_refs_alignment ===\
+src/lab1.cpp:44:36: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:44:36: note: can't force alignment of ref: MEM[(long long unsigned int * const &)__for_range_8]\
+src/lab1.cpp:44:36: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:44:36: note: can't force alignment of ref: MEM[(long long unsigned int * const &)__for_range_8 + 8]\
+src/lab1.cpp:44:36: note: === vect_analyze_slp ===\
+src/lab1.cpp:44:36: note: Failed to SLP the basic block.\
+src/lab1.cpp:44:36: note: not vectorized: failed to find SLP opportunities in basic block.\
+src/lab1.cpp:44:36: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:44:36: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:44:36: note: got vectype for stmt: best_10 = *SR.84_17;\
+vector(2) long long unsigned int\
+src/lab1.cpp:44:36: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:35:20: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:35:20: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:35:20: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:35:20: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:35:20: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:35:20: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:35:20: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:35:20: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:35:20: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:50:9: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:50:9: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:50:9: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:39:17: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:39:17: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:39:17: note: got vectype for stmt: best_22 = *SR.82_18;\
+vector(2) long long unsigned int\
+src/lab1.cpp:39:17: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:44:36: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:44:36: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:44:36: note: got vectype for stmt: best_42 = *SR.84_16;\
+vector(2) long long unsigned int\
+src/lab1.cpp:44:36: note: not vectorized: not enough data-refs in basic block.\
+\
+Analyzing loop at src/lab1.cpp:61\
+src/lab1.cpp:61:3: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:61:3: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:61:3: note: not vectorized: multiple nested loops.\
+src/lab1.cpp:61:3: note: bad loop form.\
+\
+Analyzing loop at src/lab1.cpp:44\
+src/lab1.cpp:44:3: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:44:3: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:44:3: note: not vectorized: control flow in loop.\
+src/lab1.cpp:44:3: note: bad loop form.\
+\
+Analyzing loop at src/lab1.cpp:44\
+src/lab1.cpp:44:3: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:44:3: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:44:3: note: not vectorized: control flow in loop.\
+src/lab1.cpp:44:3: note: bad loop form.\
+\
+Analyzing loop at src/lab1.cpp:39\
+src/lab1.cpp:39:3: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:39:3: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:39:3: note: not vectorized: control flow in loop.\
+src/lab1.cpp:39:3: note: bad loop form.\
+src/lab1.cpp:53:6: note: vectorized 0 loops in function.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:456:59: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:456:59: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:456:59: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: got vectype for stmt: file.D.31470._vptr.basic_ostream = &MEM[(void *)&_ZTVSt14basic_ofstreamIcSt11char_traitsIcEE + 24B];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: got vectype for stmt: MEM[(struct basic_ios *)&file + 248B].D.26897._vptr.ios_base = &MEM[(void *)&_ZTVSt14basic_ofstreamIcSt11char_traitsIcEE + 64B];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: Detected interleaving file.D.31470._vptr.basic_ostream and MEM[(struct basic_ios *)&file + 248B].D.26897._vptr.ios_base\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: interleaved store with gaps\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: not vectorized: complicated access pattern.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: vect_compute_data_ref_alignment:\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: misalign = 8 bytes of ref MEM[(struct basic_ios *)&file + 248B].D.26897._vptr.ios_base\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:647:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:647:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:647:2: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:719:6: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:719:6: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:719:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:719:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:719:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:719:2: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: got vectype for stmt: _62 = file.D.31470._vptr.basic_ostream;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: got vectype for stmt: _63 = MEM[(long int *)_62 + -24B];\
+vector(2) long int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: got vectype for stmt: _66 = MEM[(_Ios_Iostate *)_65 + 32B];\
+vector(4) unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: not consecutive access _66 = MEM[(_Ios_Iostate *)_65 + 32B];\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: not consecutive access _62 = file.D.31470._vptr.basic_ostream;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: not consecutive access _63 = MEM[(long int *)_62 + -24B];\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: vect_is_simple_use: operand __a.17_67\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: def_stmt: __a.17_67 = (int) _66;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: type of def: 3.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:720:4: note: not vectorized: failed to find SLP opportunities in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:724:4: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:724:4: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:724:4: note: got vectype for stmt: _58 = file.D.31470._vptr.basic_ostream;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:724:4: note: got vectype for stmt: _59 = MEM[(long int *)_58 + -24B];\
+vector(2) long int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:724:4: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:724:4: note: not consecutive access _58 = file.D.31470._vptr.basic_ostream;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:724:4: note: not consecutive access _59 = MEM[(long int *)_58 + -24B];\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:724:4: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:724:4: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:724:4: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:724:4: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:724:4: note: not vectorized: failed to find SLP opportunities in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:645:38: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: got vectype for stmt: MEM[(struct basic_ostream *)&file]._vptr.basic_ostream = iftmp.12_43;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: got vectype for stmt: _51 = MEM[(long int *)iftmp.12_43 + -24B];\
+vector(2) long int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: got vectype for stmt: _53->D.26897._vptr.ios_base = iftmp.14_47;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: not consecutive access _53->D.26897._vptr.ios_base = iftmp.14_47;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: not consecutive access MEM[(struct basic_ostream *)&file]._vptr.basic_ostream = iftmp.12_43;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: not consecutive access _51 = MEM[(long int *)iftmp.12_43 + -24B];\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:93:26: note: not vectorized: failed to find SLP opportunities in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:276:22: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:276:22: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:276:22: note: got vectype for stmt: MEM[(struct basic_ios *)&file + 248B].D.26897._vptr.ios_base = &MEM[(void *)&_ZTVSt9basic_iosIcSt11char_traitsIcEE + 16B];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:276:22: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: got vectype for stmt: SR.82_83 = MEM[(long long unsigned int * const &)&sequential_measurements];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: got vectype for stmt: _84 = MEM[(long long unsigned int * const &)&sequential_measurements + 8];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: Detected interleaving MEM[(long long unsigned int * const &)&sequential_measurements] and MEM[(long long unsigned int * const &)&sequential_measurements + 8]\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: Detected interleaving of size 2\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: vect_compute_data_ref_alignment:\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: misalign = 0 bytes of ref MEM[(long long unsigned int * const &)&sequential_measurements]\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: vect_compute_data_ref_alignment:\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: misalign = 8 bytes of ref MEM[(long long unsigned int * const &)&sequential_measurements + 8]\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:729:23: note: not vectorized: failed to find SLP opportunities in basic block.\
+src/lab1.cpp:39:17: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:39:17: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:39:17: note: got vectype for stmt: best_86 = *SR.82_91;\
+vector(2) long long unsigned int\
+src/lab1.cpp:39:17: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:57:10: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:57:10: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:57:10: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:535:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:535:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:535:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:206:29: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:206:29: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:206:29: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: got vectype for stmt: _10 = MEM[(struct basic_ostream *)_31]._vptr.basic_ostream;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: got vectype for stmt: _96 = MEM[(long int *)_10 + -24B];\
+vector(2) long int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: got vectype for stmt: _34 = MEM[(const struct basic_ios *)_98]._M_ctype;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not consecutive access _34 = MEM[(const struct basic_ios *)_98]._M_ctype;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not consecutive access _96 = MEM[(long int *)_10 + -24B];\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not consecutive access _10 = MEM[(struct basic_ostream *)_31]._vptr.basic_ostream;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:49:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:49:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:49:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:867:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:867:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:867:2: note: got vectype for stmt: _103 = MEM[(const struct ctype *)_34]._M_widen_ok;\
+vector(16) char\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:867:2: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:868:51: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:868:51: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:868:51: note: got vectype for stmt: _106 = MEM[(const struct ctype *)_34]._M_widen[10];\
+vector(16) char\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:868:51: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:869:23: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:869:23: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:869:23: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: got vectype for stmt: _111 = MEM[(const struct ctype *)_34].D.23821._vptr.facet;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: got vectype for stmt: _112 = MEM[(int (*__vtbl_ptr_type) () *)_111 + 48B];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: not consecutive access _111 = MEM[(const struct ctype *)_34].D.23821._vptr.facet;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: not consecutive access _112 = MEM[(int (*__vtbl_ptr_type) () *)_111 + 48B];\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:587:25: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:587:25: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:587:25: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:61:3: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:61:3: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:61:3: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:62:36: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:62:36: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:62:36: note: got vectype for stmt: SR.84_123 = MEM[(long long unsigned int * const &)__for_range_122];\
+vector(2) long unsigned int\
+src/lab1.cpp:62:36: note: got vectype for stmt: _124 = MEM[(long long unsigned int * const &)__for_range_122 + 8];\
+vector(2) long unsigned int\
+src/lab1.cpp:62:36: note: === vect_analyze_data_ref_accesses ===\
+src/lab1.cpp:62:36: note: Detected interleaving MEM[(long long unsigned int * const &)__for_range_122] and MEM[(long long unsigned int * const &)__for_range_122 + 8]\
+src/lab1.cpp:62:36: note: Detected interleaving of size 3\
+src/lab1.cpp:62:36: note: === vect_pattern_recog ===\
+src/lab1.cpp:62:36: note: === vect_analyze_data_refs_alignment ===\
+src/lab1.cpp:62:36: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:62:36: note: SLP: step doesn't divide the vector-size.\
+src/lab1.cpp:62:36: note: Unknown alignment for access: measurements\
+src/lab1.cpp:62:36: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:62:36: note: SLP: step doesn't divide the vector-size.\
+src/lab1.cpp:62:36: note: Unknown alignment for access: measurements\
+src/lab1.cpp:62:36: note: === vect_analyze_slp ===\
+src/lab1.cpp:62:36: note: Failed to SLP the basic block.\
+src/lab1.cpp:62:36: note: not vectorized: failed to find SLP opportunities in basic block.\
+src/lab1.cpp:44:36: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:44:36: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:44:36: note: got vectype for stmt: best_126 = *SR.84_131;\
+vector(2) long long unsigned int\
+src/lab1.cpp:44:36: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:62:12: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:62:12: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:62:12: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:535:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:535:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:535:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:206:29: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:206:29: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:206:29: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: got vectype for stmt: _18 = MEM[(struct basic_ostream *)_12]._vptr.basic_ostream;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: got vectype for stmt: _147 = MEM[(long int *)_18 + -24B];\
+vector(2) long int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: got vectype for stmt: _36 = MEM[(const struct basic_ios *)_149]._M_ctype;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not consecutive access _36 = MEM[(const struct basic_ios *)_149]._M_ctype;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not consecutive access _18 = MEM[(struct basic_ostream *)_12]._vptr.basic_ostream;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not consecutive access _147 = MEM[(long int *)_18 + -24B];\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:49:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:49:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:49:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:867:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:867:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:867:2: note: got vectype for stmt: _154 = MEM[(const struct ctype *)_36]._M_widen_ok;\
+vector(16) char\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:867:2: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:868:51: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:868:51: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:868:51: note: got vectype for stmt: _157 = MEM[(const struct ctype *)_36]._M_widen[10];\
+vector(16) char\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:868:51: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:869:23: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:869:23: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:869:23: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: got vectype for stmt: _162 = MEM[(const struct ctype *)_36].D.23821._vptr.facet;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: got vectype for stmt: _163 = MEM[(int (*__vtbl_ptr_type) () *)_162 + 48B];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: not consecutive access _162 = MEM[(const struct ctype *)_36].D.23821._vptr.facet;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: not consecutive access _163 = MEM[(int (*__vtbl_ptr_type) () *)_162 + 48B];\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: not vectorized: failed to find SLP opportunities in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:587:25: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:587:25: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:587:25: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:60:2: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:60:2: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:60:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:64:40: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:64:40: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:64:40: note: got vectype for stmt: SR.84_169 = MEM[(long long unsigned int * const &)__for_range_168];\
+vector(2) long unsigned int\
+src/lab1.cpp:64:40: note: got vectype for stmt: _170 = MEM[(long long unsigned int * const &)__for_range_168 + 8];\
+vector(2) long unsigned int\
+src/lab1.cpp:64:40: note: === vect_analyze_data_ref_accesses ===\
+src/lab1.cpp:64:40: note: Detected interleaving MEM[(long long unsigned int * const &)__for_range_168] and MEM[(long long unsigned int * const &)__for_range_168 + 8]\
+src/lab1.cpp:64:40: note: Detected interleaving of size 3\
+src/lab1.cpp:64:40: note: === vect_pattern_recog ===\
+src/lab1.cpp:64:40: note: === vect_analyze_data_refs_alignment ===\
+src/lab1.cpp:64:40: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:64:40: note: SLP: step doesn't divide the vector-size.\
+src/lab1.cpp:64:40: note: Unknown alignment for access: measurements\
+src/lab1.cpp:64:40: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:64:40: note: SLP: step doesn't divide the vector-size.\
+src/lab1.cpp:64:40: note: Unknown alignment for access: measurements\
+src/lab1.cpp:64:40: note: === vect_analyze_slp ===\
+src/lab1.cpp:64:40: note: Failed to SLP the basic block.\
+src/lab1.cpp:64:40: note: not vectorized: failed to find SLP opportunities in basic block.\
+src/lab1.cpp:44:36: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:44:36: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:44:36: note: got vectype for stmt: best_172 = *SR.84_177;\
+vector(2) long long unsigned int\
+src/lab1.cpp:44:36: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:766:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:196:50: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:196:50: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:196:50: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:535:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:535:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:535:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:206:29: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:206:29: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:206:29: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: got vectype for stmt: _24 = MEM[(struct basic_ostream *)_23]._vptr.basic_ostream;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: got vectype for stmt: _193 = MEM[(long int *)_24 + -24B];\
+vector(2) long int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: got vectype for stmt: _40 = MEM[(const struct basic_ios *)_195]._M_ctype;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not consecutive access _40 = MEM[(const struct basic_ios *)_195]._M_ctype;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not consecutive access _24 = MEM[(struct basic_ostream *)_23]._vptr.basic_ostream;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not consecutive access _193 = MEM[(long int *)_24 + -24B];\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:49:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:49:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/basic_ios.h:49:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:867:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:867:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:867:2: note: got vectype for stmt: _200 = MEM[(const struct ctype *)_40]._M_widen_ok;\
+vector(16) char\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:867:2: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:868:51: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:868:51: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:868:51: note: got vectype for stmt: _203 = MEM[(const struct ctype *)_40]._M_widen[10];\
+vector(16) char\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:868:51: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:869:23: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:869:23: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:869:23: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: got vectype for stmt: _208 = MEM[(const struct ctype *)_40].D.23821._vptr.facet;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: got vectype for stmt: _209 = MEM[(int (*__vtbl_ptr_type) () *)_208 + 48B];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: not consecutive access _208 = MEM[(const struct ctype *)_40].D.23821._vptr.facet;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: not consecutive access _209 = MEM[(int (*__vtbl_ptr_type) () *)_208 + 48B];\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/locale_facets.h:870:27: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:565:46: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:587:25: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:587:25: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ostream:587:25: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:758:6: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:758:6: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:758:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:758:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:758:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:758:2: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: got vectype for stmt: file.D.31470._vptr.basic_ostream = &MEM[(void *)&_ZTVSt14basic_ofstreamIcSt11char_traitsIcEE + 24B];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: got vectype for stmt: MEM[(struct basic_ios *)&file + 248B].D.26897._vptr.ios_base = &MEM[(void *)&_ZTVSt14basic_ofstreamIcSt11char_traitsIcEE + 64B];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: got vectype for stmt: MEM[(struct basic_filebuf *)&file + 8B].D.31250._vptr.basic_streambuf = &MEM[(void *)&_ZTVSt13basic_filebufIcSt11char_traitsIcEE + 16B];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: Detected interleaving file.D.31470._vptr.basic_ostream and MEM[(struct basic_filebuf *)&file + 8B].D.31250._vptr.basic_streambuf\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: Detected interleaving file.D.31470._vptr.basic_ostream and MEM[(struct basic_ios *)&file + 248B].D.26897._vptr.ios_base\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: interleaved store with gaps\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: not vectorized: complicated access pattern.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: vect_compute_data_ref_alignment:\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: misalign = 8 bytes of ref MEM[(struct basic_ios *)&file + 248B].D.26897._vptr.ios_base\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: vect_compute_data_ref_alignment:\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: misalign = 8 bytes of ref MEM[(struct basic_filebuf *)&file + 8B].D.31250._vptr.basic_streambuf\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:677:9: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: got vectype for stmt: _27 = file.D.31470._vptr.basic_ostream;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: got vectype for stmt: _220 = MEM[(long int *)_27 + -24B];\
+vector(2) long int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: got vectype for stmt: _223 = MEM[(_Ios_Iostate *)_222 + 32B];\
+vector(4) unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: not consecutive access _223 = MEM[(_Ios_Iostate *)_222 + 32B];\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: not consecutive access _27 = file.D.31470._vptr.basic_ostream;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: not consecutive access _220 = MEM[(long int *)_27 + -24B];\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: vect_is_simple_use: operand __a.17_224\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: def_stmt: __a.17_224 = (int) _223;\
+\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: type of def: 3.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/fstream:759:4: note: not vectorized: failed to find SLP opportunities in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:53:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:53:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:53:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:66:14: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:66:14: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:66:14: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:44:36: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:44:36: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:44:36: note: got vectype for stmt: best_180 = *SR.84_123;\
+vector(2) long long unsigned int\
+src/lab1.cpp:44:36: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:44:36: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:44:36: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:44:36: note: got vectype for stmt: best_144 = *SR.84_169;\
+vector(2) long long unsigned int\
+src/lab1.cpp:44:36: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:39:17: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:39:17: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:39:17: note: got vectype for stmt: best_99 = *SR.82_83;\
+vector(2) long long unsigned int\
+src/lab1.cpp:39:17: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:70:24: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:70:24: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:70:24: note: not vectorized: not enough data-refs in basic block.\
+\
+Analyzing loop at src/lab1.cpp:88\
+src/lab1.cpp:88:2: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:88:2: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:88:2: note: ===== analyze_loop_nest_1 =====\
+src/lab1.cpp:88:2: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:88:2: note: === get_loop_niters ===\
+src/lab1.cpp:88:2: note: Considering outer-loop vectorization.\
+src/lab1.cpp:88:2: note: === get_loop_niters ===\
+src/lab1.cpp:88:2: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:88:2: note: not vectorized: loop contains function calls or data references that cannot be analyzed\
+src/lab1.cpp:88:2: note: bad data references.\
+\
+Analyzing loop at src/lab1.cpp:89\
+src/lab1.cpp:89:3: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:89:3: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:89:3: note: === get_loop_niters ===\
+src/lab1.cpp:89:3: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:89:3: note: not vectorized: loop contains function calls or data references that cannot be analyzed\
+src/lab1.cpp:89:3: note: bad data references.\
+src/lab1.cpp:86:6: note: vectorized 0 loops in function.\
+src/lab1.cpp:86:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:86:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:86:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:86:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:86:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:86:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:90:29: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:90:29: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:90:29: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:88:2: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:88:2: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:88:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:86:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:86:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:86:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:86:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:86:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:86:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:94:1: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:94:1: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:94:1: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:98:19: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:98:19: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:98:19: note: got vectype for stmt: _3 = *r_2(D);\
+vector(4) float\
+src/lab1.cpp:98:19: note: got vectype for stmt: _5 = *x_4(D);\
+vector(4) float\
+src/lab1.cpp:98:19: note: got vectype for stmt: _7 = *y_6(D);\
+vector(4) float\
+src/lab1.cpp:98:19: note: got vectype for stmt: *r_2(D) = _9;\
+vector(4) float\
+src/lab1.cpp:98:19: note: === vect_analyze_data_ref_accesses ===\
+src/lab1.cpp:98:19: note: not consecutive access _5 = *x_4(D);\
+\
+src/lab1.cpp:98:19: note: not consecutive access _7 = *y_6(D);\
+\
+src/lab1.cpp:98:19: note: not consecutive access _3 = *r_2(D);\
+\
+src/lab1.cpp:98:19: note: not consecutive access *r_2(D) = _9;\
+\
+src/lab1.cpp:98:19: note: === vect_pattern_recog ===\
+src/lab1.cpp:98:19: note: vect_is_simple_use: operand _5\
+src/lab1.cpp:98:19: note: def_stmt: _5 = *x_4(D);\
+\
+src/lab1.cpp:98:19: note: type of def: 3.\
+src/lab1.cpp:98:19: note: === vect_analyze_data_refs_alignment ===\
+src/lab1.cpp:98:19: note: === vect_analyze_slp ===\
+src/lab1.cpp:98:19: note: Failed to SLP the basic block.\
+src/lab1.cpp:98:19: note: not vectorized: failed to find SLP opportunities in basic block.\
+\
+Analyzing loop at src/lab1.cpp:102\
+src/lab1.cpp:102:2: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:102:2: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:102:2: note: not vectorized: multiple nested loops.\
+src/lab1.cpp:102:2: note: bad loop form.\
+\
+Analyzing loop at src/lab1.cpp:103\
+src/lab1.cpp:103:3: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:103:3: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:103:3: note: ===== analyze_loop_nest_1 =====\
+src/lab1.cpp:103:3: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:103:3: note: === get_loop_niters ===\
+src/lab1.cpp:103:3: note: Considering outer-loop vectorization.\
+src/lab1.cpp:103:3: note: === get_loop_niters ===\
+src/lab1.cpp:103:3: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:103:3: note: not vectorized: loop contains function calls or data references that cannot be analyzed\
+src/lab1.cpp:103:3: note: bad data references.\
+\
+Analyzing loop at src/lab1.cpp:104\
+src/lab1.cpp:104:4: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:104:4: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:104:4: note: === get_loop_niters ===\
+src/lab1.cpp:104:4: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:104:4: note: not vectorized: loop contains function calls or data references that cannot be analyzed\
+src/lab1.cpp:104:4: note: bad data references.\
+src/lab1.cpp:101:6: note: vectorized 0 loops in function.\
+src/lab1.cpp:101:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:101:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:101:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:101:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:101:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:101:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:105:48: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:105:48: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:105:48: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:103:3: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:103:3: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:103:3: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:101:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:101:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:101:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:101:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:101:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:101:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:102:2: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:102:2: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:102:2: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:101:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:101:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:101:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:101:6: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:101:6: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:101:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:109:1: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:109:1: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:109:1: note: not vectorized: not enough data-refs in basic block.\
+\
+Analyzing loop at /share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_uninitialized.h:74\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_uninitialized.h:74:8: note: ===== analyze_loop_nest =====\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_uninitialized.h:74:8: note: === vect_analyze_loop_form ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_uninitialized.h:74:8: note: not vectorized: control flow in loop.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_uninitialized.h:74:8: note: bad loop form.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: vectorized 0 loops in function.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: got vectype for stmt: _39 = MEM[(long long unsigned int * *)this_2(D)];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: got vectype for stmt: _40 = MEM[(long long unsigned int * *)this_2(D) + 8B];\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: Detected interleaving MEM[(long long unsigned int * *)this_2(D)] and MEM[(long long unsigned int * *)this_2(D) + 8B]\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: Detected interleaving of size 2\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: vect_compute_data_ref_alignment:\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: can't force alignment of ref: MEM[(long long unsigned int * *)this_2(D)]\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: vect_compute_data_ref_alignment:\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: can't force alignment of ref: MEM[(long long unsigned int * *)this_2(D) + 8B]\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:655:74: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:1421:55: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:1421:55: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:1421:55: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:1422:63: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:1422:63: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:1422:63: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:104:60: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:104:60: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:104:60: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:414:40: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:414:40: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:414:40: note: got vectype for stmt: _24 = *__args#0_5(D);\
+vector(2) long long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:414:40: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: got vectype for stmt: *_9 = _24;\
+vector(2) long long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_uninitialized.h:74:8: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_uninitialized.h:74:8: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_uninitialized.h:74:8: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_construct.h:75:7: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_construct.h:75:7: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_construct.h:75:7: note: got vectype for stmt: _26 = *__first$_M_current_47;\
+vector(2) long long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_construct.h:75:7: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: got vectype for stmt: *__new_finish_57 = _26;\
+vector(2) long long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:1004:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:1004:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_iterator.h:1004:2: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:404:7: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:177:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:177:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:177:2: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:110:9: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:110:9: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:110:9: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: got vectype for stmt: this_2(D)->D.37473._M_impl._M_start = __new_finish_18;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: got vectype for stmt: this_2(D)->D.37473._M_impl._M_finish = prephitmp_77;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: got vectype for stmt: this_2(D)->D.37473._M_impl._M_end_of_storage = _15;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: === vect_analyze_data_ref_accesses ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: Detected interleaving this_2(D)->D.37473._M_impl._M_start and this_2(D)->D.37473._M_impl._M_finish\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: Detected interleaving this_2(D)->D.37473._M_impl._M_start and this_2(D)->D.37473._M_impl._M_end_of_storage\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: Detected interleaving of size 3\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: === vect_pattern_recog ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: === vect_analyze_data_refs_alignment ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: vect_compute_data_ref_alignment:\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: can't force alignment of ref: this_2(D)->D.37473._M_impl._M_start\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: vect_compute_data_ref_alignment:\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: can't force alignment of ref: this_2(D)->D.37473._M_impl._M_finish\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: vect_compute_data_ref_alignment:\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: can't force alignment of ref: this_2(D)->D.37473._M_impl._M_end_of_storage\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: === vect_analyze_slp ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: Build SLP failed: unrolling required in basic block SLP\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: Failed to SLP the basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:438:2: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:170:50: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:170:50: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:170:50: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:75:24: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:75:24: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:75:24: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:79:48: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:79:48: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:79:48: note: got vectype for stmt: initial_time.28_10 = initial_time;\
+vector(2) long long unsigned int\
+src/lab1.cpp:79:48: note: got vectype for stmt: D.37952 = _11;\
+vector(2) long long unsigned int\
+src/lab1.cpp:79:48: note: got vectype for stmt: _23 = sequential_measurements.D.37473._M_impl._M_finish;\
+vector(2) long unsigned int\
+src/lab1.cpp:79:48: note: got vectype for stmt: _24 = sequential_measurements.D.37473._M_impl._M_end_of_storage;\
+vector(2) long unsigned int\
+src/lab1.cpp:79:48: note: === vect_analyze_data_ref_accesses ===\
+src/lab1.cpp:79:48: note: Detected interleaving sequential_measurements.D.37473._M_impl._M_finish and sequential_measurements.D.37473._M_impl._M_end_of_storage\
+src/lab1.cpp:79:48: note: not consecutive access initial_time.28_10 = initial_time;\
+\
+src/lab1.cpp:79:48: note: Detected interleaving of size 2\
+src/lab1.cpp:79:48: note: not consecutive access D.37952 = _11;\
+\
+src/lab1.cpp:79:48: note: === vect_pattern_recog ===\
+src/lab1.cpp:79:48: note: === vect_analyze_data_refs_alignment ===\
+src/lab1.cpp:79:48: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:79:48: note: misalign = 8 bytes of ref sequential_measurements.D.37473._M_impl._M_finish\
+src/lab1.cpp:79:48: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:79:48: note: misalign = 0 bytes of ref sequential_measurements.D.37473._M_impl._M_end_of_storage\
+src/lab1.cpp:79:48: note: === vect_analyze_slp ===\
+src/lab1.cpp:79:48: note: Failed to SLP the basic block.\
+src/lab1.cpp:79:48: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:120:4: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:120:4: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:120:4: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:74:20: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:74:20: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:74:20: note: got vectype for stmt: *_23 = _11;\
+vector(2) long long unsigned int\
+src/lab1.cpp:74:20: note: got vectype for stmt: pretmp_49 = initial_time;\
+vector(2) long long unsigned int\
+src/lab1.cpp:74:20: note: === vect_analyze_data_ref_accesses ===\
+src/lab1.cpp:74:20: note: not consecutive access pretmp_49 = initial_time;\
+\
+src/lab1.cpp:74:20: note: not consecutive access *_23 = _11;\
+\
+src/lab1.cpp:74:20: note: === vect_pattern_recog ===\
+src/lab1.cpp:74:20: note: === vect_analyze_data_refs_alignment ===\
+src/lab1.cpp:74:20: note: === vect_analyze_slp ===\
+src/lab1.cpp:74:20: note: Failed to SLP the basic block.\
+src/lab1.cpp:74:20: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:98:6: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:98:6: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:98:6: note: got vectype for stmt: sequential_measurements.D.37473._M_impl._M_finish = _26;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:98:6: note: not vectorized: not enough data-refs in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:101:4: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:101:4: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:101:4: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:79:62: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:79:62: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:79:62: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:81:45: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:81:45: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:81:45: note: got vectype for stmt: initial_time.28_15 = initial_time;\
+vector(2) long long unsigned int\
+src/lab1.cpp:81:45: note: got vectype for stmt: D.37953 = _16;\
+vector(2) long long unsigned int\
+src/lab1.cpp:81:45: note: got vectype for stmt: _19 = MEM[(struct vector *)&measurements][thread_9(D)].D.37473._M_impl._M_finish;\
+vector(2) long unsigned int\
+src/lab1.cpp:81:45: note: got vectype for stmt: _27 = MEM[(struct vector *)&measurements][thread_9(D)].D.37473._M_impl._M_end_of_storage;\
+vector(2) long unsigned int\
+src/lab1.cpp:81:45: note: === vect_analyze_data_ref_accesses ===\
+src/lab1.cpp:81:45: note: Detected interleaving MEM[(struct vector *)&measurements][thread_9(D)].D.37473._M_impl._M_finish and MEM[(struct vector *)&measurements][thread_9(D)].D.37473._M_impl._M_end_of_storage\
+src/lab1.cpp:81:45: note: not consecutive access initial_time.28_15 = initial_time;\
+\
+src/lab1.cpp:81:45: note: Detected interleaving of size 2\
+src/lab1.cpp:81:45: note: not consecutive access D.37953 = _16;\
+\
+src/lab1.cpp:81:45: note: === vect_pattern_recog ===\
+src/lab1.cpp:81:45: note: === vect_analyze_data_refs_alignment ===\
+src/lab1.cpp:81:45: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:81:45: note: Unknown alignment for access: measurements\
+src/lab1.cpp:81:45: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:81:45: note: Unknown alignment for access: measurements\
+src/lab1.cpp:81:45: note: === vect_analyze_slp ===\
+src/lab1.cpp:81:45: note: Failed to SLP the basic block.\
+src/lab1.cpp:81:45: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:120:4: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:120:4: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/ext/new_allocator.h:120:4: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:74:20: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:74:20: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:74:20: note: got vectype for stmt: *_19 = _16;\
+vector(2) long long unsigned int\
+src/lab1.cpp:74:20: note: got vectype for stmt: pretmp_45 = initial_time;\
+vector(2) long long unsigned int\
+src/lab1.cpp:74:20: note: === vect_analyze_data_ref_accesses ===\
+src/lab1.cpp:74:20: note: not consecutive access pretmp_45 = initial_time;\
+\
+src/lab1.cpp:74:20: note: not consecutive access *_19 = _16;\
+\
+src/lab1.cpp:74:20: note: === vect_pattern_recog ===\
+src/lab1.cpp:74:20: note: === vect_analyze_data_refs_alignment ===\
+src/lab1.cpp:74:20: note: === vect_analyze_slp ===\
+src/lab1.cpp:74:20: note: Failed to SLP the basic block.\
+src/lab1.cpp:74:20: note: not vectorized: failed to find SLP opportunities in basic block.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:98:6: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:98:6: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:98:6: note: got vectype for stmt: MEM[(struct vector *)&measurements][thread_9(D)].D.37473._M_impl._M_finish = _29;\
+vector(2) long unsigned int\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/bits/vector.tcc:98:6: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:81:59: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:81:59: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:81:59: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:81:59: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:81:59: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:81:59: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:83:22: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:83:22: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:83:22: note: not vectorized: not enough data-refs in basic block.\
+src/lab1.cpp:111:5: note: vectorized 0 loops in function.\
+src/lab1.cpp:114:16: note: ===vect_slp_analyze_bb===\
+src/lab1.cpp:114:16: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:114:16: note: not vectorized: not enough data-refs in basic block.\
+\
+Analyzing loop at src/lab1.cpp:25\
+src/lab1.cpp:25:58: note: ===== analyze_loop_nest =====\
+src/lab1.cpp:25:58: note: === vect_analyze_loop_form ===\
+src/lab1.cpp:25:58: note: === get_loop_niters ===\
+src/lab1.cpp:25:58: note: === vect_analyze_data_refs ===\
+src/lab1.cpp:25:58: note: got vectype for stmt: MEM[(struct _Vector_impl *)_21]._M_start = 0B;\
+vector(2) long unsigned int\
+src/lab1.cpp:25:58: note: got vectype for stmt: MEM[(struct _Vector_impl *)_21]._M_finish = 0B;\
+vector(2) long unsigned int\
+src/lab1.cpp:25:58: note: got vectype for stmt: MEM[(struct _Vector_impl *)_21]._M_end_of_storage = 0B;\
+vector(2) long unsigned int\
+src/lab1.cpp:25:58: note: === vect_analyze_data_ref_accesses ===\
+src/lab1.cpp:25:58: note: Detected interleaving MEM[(struct _Vector_impl *)_21]._M_start and MEM[(struct _Vector_impl *)_21]._M_finish\
+src/lab1.cpp:25:58: note: Detected interleaving MEM[(struct _Vector_impl *)_21]._M_start and MEM[(struct _Vector_impl *)_21]._M_end_of_storage\
+src/lab1.cpp:25:58: note: Detected interleaving of size 3\
+src/lab1.cpp:25:58: note: === vect_analyze_scalar_cycles ===\
+src/lab1.cpp:25:58: note: Analyze phi: .MEM_20 = PHI <.MEM_15(4), .MEM_12(2)>\
+\
+src/lab1.cpp:25:58: note: Analyze phi: _21 = PHI <_4(4), &measurements(2)>\
+\
+src/lab1.cpp:25:58: note: Access function of PHI: \{(struct vector *) &measurements, +, 24\}_1\
+src/lab1.cpp:25:58: note: step: 24,  init: (struct vector *) &measurements\
+src/lab1.cpp:25:58: note: Detected induction.\
+src/lab1.cpp:25:58: note: Analyze phi: _22 = PHI <_6(4), 12(2)>\
+\
+src/lab1.cpp:25:58: note: Access function of PHI: \{12, +, -1\}_1\
+src/lab1.cpp:25:58: note: step: -1,  init: 12\
+src/lab1.cpp:25:58: note: Detected induction.\
+src/lab1.cpp:25:58: note: Analyze phi: ivtmp_3 = PHI <ivtmp_5(4), 13(2)>\
+\
+src/lab1.cpp:25:58: note: Access function of PHI: \{13, +, 18446744073709551615\}_1\
+src/lab1.cpp:25:58: note: step: 18446744073709551615,  init: 13\
+src/lab1.cpp:25:58: note: Detected induction.\
+src/lab1.cpp:25:58: note: === vect_pattern_recog ===\
+src/lab1.cpp:25:58: note: === vect_mark_stmts_to_be_vectorized ===\
+src/lab1.cpp:25:58: note: init: phi relevant? .MEM_20 = PHI <.MEM_15(4), .MEM_12(2)>\
+\
+src/lab1.cpp:25:58: note: init: phi relevant? _21 = PHI <_4(4), &measurements(2)>\
+\
+src/lab1.cpp:25:58: note: init: phi relevant? _22 = PHI <_6(4), 12(2)>\
+\
+src/lab1.cpp:25:58: note: init: phi relevant? ivtmp_3 = PHI <ivtmp_5(4), 13(2)>\
+\
+src/lab1.cpp:25:58: note: init: stmt relevant? MEM[(struct _Vector_impl *)_21]._M_start = 0B;\
+\
+src/lab1.cpp:25:58: note: vec_stmt_relevant_p: stmt has vdefs.\
+src/lab1.cpp:25:58: note: mark relevant 4, live 0.\
+src/lab1.cpp:25:58: note: init: stmt relevant? MEM[(struct _Vector_impl *)_21]._M_finish = 0B;\
+\
+src/lab1.cpp:25:58: note: vec_stmt_relevant_p: stmt has vdefs.\
+src/lab1.cpp:25:58: note: mark relevant 4, live 0.\
+src/lab1.cpp:25:58: note: init: stmt relevant? MEM[(struct _Vector_impl *)_21]._M_end_of_storage = 0B;\
+\
+src/lab1.cpp:25:58: note: vec_stmt_relevant_p: stmt has vdefs.\
+src/lab1.cpp:25:58: note: mark relevant 4, live 0.\
+src/lab1.cpp:25:58: note: init: stmt relevant? _4 = _21 + 24;\
+\
+src/lab1.cpp:25:58: note: init: stmt relevant? _6 = _22 + -1;\
+\
+src/lab1.cpp:25:58: note: init: stmt relevant? ivtmp_5 = ivtmp_3 - 1;\
+\
+src/lab1.cpp:25:58: note: init: stmt relevant? if (ivtmp_5 != 0)\
+\
+src/lab1.cpp:25:58: note: worklist: examine stmt: MEM[(struct _Vector_impl *)_21]._M_end_of_storage = 0B;\
+\
+src/lab1.cpp:25:58: note: worklist: examine stmt: MEM[(struct _Vector_impl *)_21]._M_finish = 0B;\
+\
+src/lab1.cpp:25:58: note: worklist: examine stmt: MEM[(struct _Vector_impl *)_21]._M_start = 0B;\
+\
+src/lab1.cpp:25:58: note: === vect_analyze_data_ref_dependences ===\
+src/lab1.cpp:25:58: note: === vect_determine_vectorization_factor ===\
+src/lab1.cpp:25:58: note: ==> examining phi: .MEM_20 = PHI <.MEM_15(4), .MEM_12(2)>\
+\
+src/lab1.cpp:25:58: note: ==> examining phi: _21 = PHI <_4(4), &measurements(2)>\
+\
+src/lab1.cpp:25:58: note: ==> examining phi: _22 = PHI <_6(4), 12(2)>\
+\
+src/lab1.cpp:25:58: note: ==> examining phi: ivtmp_3 = PHI <ivtmp_5(4), 13(2)>\
+\
+src/lab1.cpp:25:58: note: ==> examining statement: MEM[(struct _Vector_impl *)_21]._M_start = 0B;\
+\
+src/lab1.cpp:25:58: note: get vectype for scalar type:  long long unsigned int *\
+src/lab1.cpp:25:58: note: vectype: vector(2) long unsigned int\
+src/lab1.cpp:25:58: note: nunits = 2\
+src/lab1.cpp:25:58: note: ==> examining statement: MEM[(struct _Vector_impl *)_21]._M_finish = 0B;\
+\
+src/lab1.cpp:25:58: note: get vectype for scalar type:  long long unsigned int *\
+src/lab1.cpp:25:58: note: vectype: vector(2) long unsigned int\
+src/lab1.cpp:25:58: note: nunits = 2\
+src/lab1.cpp:25:58: note: ==> examining statement: MEM[(struct _Vector_impl *)_21]._M_end_of_storage = 0B;\
+\
+src/lab1.cpp:25:58: note: get vectype for scalar type:  long long unsigned int *\
+src/lab1.cpp:25:58: note: vectype: vector(2) long unsigned int\
+src/lab1.cpp:25:58: note: nunits = 2\
+src/lab1.cpp:25:58: note: ==> examining statement: _4 = _21 + 24;\
+\
+src/lab1.cpp:25:58: note: skip.\
+src/lab1.cpp:25:58: note: ==> examining statement: _6 = _22 + -1;\
+\
+src/lab1.cpp:25:58: note: skip.\
+src/lab1.cpp:25:58: note: ==> examining statement: ivtmp_5 = ivtmp_3 - 1;\
+\
+src/lab1.cpp:25:58: note: skip.\
+src/lab1.cpp:25:58: note: ==> examining statement: if (ivtmp_5 != 0)\
+\
+src/lab1.cpp:25:58: note: skip.\
+src/lab1.cpp:25:58: note: vectorization factor = 2\
+src/lab1.cpp:25:58: note: === vect_analyze_data_refs_alignment ===\
+src/lab1.cpp:25:58: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:25:58: note: misalign = 0 bytes of ref MEM[(struct _Vector_impl *)_21]._M_start\
+src/lab1.cpp:25:58: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:25:58: note: misalign = 8 bytes of ref MEM[(struct _Vector_impl *)_21]._M_finish\
+src/lab1.cpp:25:58: note: vect_compute_data_ref_alignment:\
+src/lab1.cpp:25:58: note: misalign = 0 bytes of ref MEM[(struct _Vector_impl *)_21]._M_end_of_storage\
+src/lab1.cpp:25:58: note: === vect_prune_runtime_alias_test_list ===\
+src/lab1.cpp:25:58: note: === vect_enhance_data_refs_alignment ===\
+src/lab1.cpp:25:58: note: vect_can_advance_ivs_p:\
+src/lab1.cpp:25:58: note: Analyze phi: .MEM_20 = PHI <.MEM_15(4), .MEM_12(2)>\
+\
+src/lab1.cpp:25:58: note: virtual phi. skip.\
+src/lab1.cpp:25:58: note: Analyze phi: _21 = PHI <_4(4), &measurements(2)>\
+\
+src/lab1.cpp:25:58: note: Analyze phi: _22 = PHI <_6(4), 12(2)>\
+\
+src/lab1.cpp:25:58: note: Analyze phi: ivtmp_3 = PHI <ivtmp_5(4), 13(2)>\
+\
+src/lab1.cpp:25:58: note: === vect_analyze_slp ===\
+src/lab1.cpp:25:58: note: Build SLP for MEM[(struct _Vector_impl *)_21]._M_start = 0B;\
+\
+src/lab1.cpp:25:58: note: Build SLP for MEM[(struct _Vector_impl *)_21]._M_finish = 0B;\
+\
+src/lab1.cpp:25:58: note: Build SLP for MEM[(struct _Vector_impl *)_21]._M_end_of_storage = 0B;\
+\
+src/lab1.cpp:25:58: note: vect_is_simple_use: operand 0B\
+src/lab1.cpp:25:58: note: vect_is_simple_use: operand 0B\
+src/lab1.cpp:25:58: note: vect_is_simple_use: operand 0B\
+src/lab1.cpp:25:58: note: vect_model_store_cost: aligned.\
+src/lab1.cpp:25:58: note: vect_model_store_cost: inside_cost = 3, prologue_cost = 0 .\
+src/lab1.cpp:25:58: note: vect_is_simple_use: operand 0B\
+node \
+	stmt 0 MEM[(struct _Vector_impl *)_21]._M_start = 0B;\
+\
+	stmt 1 MEM[(struct _Vector_impl *)_21]._M_finish = 0B;\
+\
+	stmt 2 MEM[(struct _Vector_impl *)_21]._M_end_of_storage = 0B;\
+\
+src/lab1.cpp:25:58: note: === vect_make_slp_decision ===\
+src/lab1.cpp:25:58: note: Decided to SLP 1 instances. Unrolling factor 2\
+src/lab1.cpp:25:58: note: === vect_detect_hybrid_slp ===\
+src/lab1.cpp:25:58: note: === vect_analyze_loop_operations ===\
+src/lab1.cpp:25:58: note: Updating vectorization factor to 2\
+src/lab1.cpp:25:58: note: examining phi: .MEM_20 = PHI <.MEM_15(4), .MEM_12(2)>\
+\
+src/lab1.cpp:25:58: note: examining phi: _21 = PHI <_4(4), &measurements(2)>\
+\
+src/lab1.cpp:25:58: note: examining phi: _22 = PHI <_6(4), 12(2)>\
+\
+src/lab1.cpp:25:58: note: examining phi: ivtmp_3 = PHI <ivtmp_5(4), 13(2)>\
+\
+src/lab1.cpp:25:58: note: ==> examining statement: MEM[(struct _Vector_impl *)_21]._M_start = 0B;\
+\
+src/lab1.cpp:25:58: note: vect_is_simple_use: operand 0B\
+src/lab1.cpp:25:58: note: vect_is_simple_use: operand 0B\
+src/lab1.cpp:25:58: note: vect_is_simple_use: operand 0B\
+src/lab1.cpp:25:58: note: ==> examining statement: MEM[(struct _Vector_impl *)_21]._M_finish = 0B;\
+\
+src/lab1.cpp:25:58: note: vect_is_simple_use: operand 0B\
+src/lab1.cpp:25:58: note: ==> examining statement: MEM[(struct _Vector_impl *)_21]._M_end_of_storage = 0B;\
+\
+src/lab1.cpp:25:58: note: vect_is_simple_use: operand 0B\
+src/lab1.cpp:25:58: note: ==> examining statement: _4 = _21 + 24;\
+\
+src/lab1.cpp:25:58: note: irrelevant.\
+src/lab1.cpp:25:58: note: ==> examining statement: _6 = _22 + -1;\
+\
+src/lab1.cpp:25:58: note: irrelevant.\
+src/lab1.cpp:25:58: note: ==> examining statement: ivtmp_5 = ivtmp_3 - 1;\
+\
+src/lab1.cpp:25:58: note: irrelevant.\
+src/lab1.cpp:25:58: note: ==> examining statement: if (ivtmp_5 != 0)\
+\
+src/lab1.cpp:25:58: note: irrelevant.\
+src/lab1.cpp:25:58: note: vectorization_factor = 2, niters = 13\
+src/lab1.cpp:25:58: note: === vect_update_slp_costs_according_to_vf ===\
+src/lab1.cpp:25:58: note: Cost model analysis: \
+  Vector inside of loop cost: 3\
+  Vector prologue cost: 1\
+  Vector epilogue cost: 3\
+  Scalar iteration cost: 3\
+  Scalar outside cost: 0\
+  Vector outside cost: 4\
+  prologue iterations: 0\
+  epilogue iterations: 1\
+  Calculated minimum iters for profitability: 2\
+\
+src/lab1.cpp:25:58: note:   Runtime profitability threshold = 1\
+src/lab1.cpp:25:58: note:   Static estimate profitability threshold = 1\
+src/lab1.cpp:25:58: note: epilog loop required\
+src/lab1.cpp:25:58: note: vect_can_advance_ivs_p:\
+src/lab1.cpp:25:58: note: Analyze phi: .MEM_20 = PHI <.MEM_15(4), .MEM_12(2)>\
+\
+src/lab1.cpp:25:58: note: virtual phi. skip.\
+src/lab1.cpp:25:58: note: Analyze phi: _21 = PHI <_4(4), &measurements(2)>\
+\
+src/lab1.cpp:25:58: note: Analyze phi: _22 = PHI <_6(4), 12(2)>\
+\
+src/lab1.cpp:25:58: note: Analyze phi: ivtmp_3 = PHI <ivtmp_5(4), 13(2)>\
+\
+src/lab1.cpp:25:58: note: loop vectorized\
+src/lab1.cpp:25:58: note: === vec_transform_loop ===\
+src/lab1.cpp:25:58: note: === vect_do_peeling_for_loop_bound ===\
+src/lab1.cpp:25:58: note: vect_update_ivs_after_vectorizer: phi: .MEM_20 = PHI <.MEM_15(4), .MEM_12(10)>\
+\
+src/lab1.cpp:25:58: note: virtual phi. skip.\
+src/lab1.cpp:25:58: note: vect_update_ivs_after_vectorizer: phi: _21 = PHI <_4(4), &measurements(10)>\
+\
+src/lab1.cpp:25:58: note: vect_update_ivs_after_vectorizer: phi: _22 = PHI <_6(4), 12(10)>\
+\
+src/lab1.cpp:25:58: note: vect_update_ivs_after_vectorizer: phi: ivtmp_3 = PHI <ivtmp_5(4), 13(10)>\
+\
+Setting upper bound of nb iterations for epilogue loop to 0\
+src/lab1.cpp:25:58: note: ------>vectorizing phi: .MEM_20 = PHI <.MEM_15(4), .MEM_12(14)>\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing phi: _21 = PHI <_4(4), &measurements(14)>\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing phi: _22 = PHI <_6(4), 12(14)>\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing phi: ivtmp_3 = PHI <ivtmp_5(4), 13(14)>\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing statement: MEM[(struct _Vector_impl *)_21]._M_start = 0B;\
+\
+src/lab1.cpp:25:58: note: === scheduling SLP instances ===\
+src/lab1.cpp:25:58: note: ------>vectorizing SLP node starting from: MEM[(struct _Vector_impl *)_21]._M_start = 0B;\
+\
+src/lab1.cpp:25:58: note: vect_is_simple_use: operand 0B\
+src/lab1.cpp:25:58: note: vect_is_simple_use: operand 0B\
+src/lab1.cpp:25:58: note: vect_is_simple_use: operand 0B\
+src/lab1.cpp:25:58: note: transform store. ncopies = 1\
+src/lab1.cpp:25:58: note: created new init_stmt: vect_cst_.301_41 = \{ 0, 0 \};\
+\
+src/lab1.cpp:25:58: note: created new init_stmt: vect_cst_.302_42 = \{ 0, 0 \};\
+\
+src/lab1.cpp:25:58: note: created new init_stmt: vect_cst_.303_43 = \{ 0, 0 \};\
+\
+src/lab1.cpp:25:58: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a record based array ref: MEM[(struct _Vector_impl *)&measurements]\
+src/lab1.cpp:25:58: note: created vectp_measurements.305_44\
+src/lab1.cpp:25:58: note: add new stmt: MEM[(long long unsigned int * *)vectp_measurements.304_45] = vect_cst_.303_43;\
+\
+src/lab1.cpp:25:58: note: add new stmt: vectp_measurements.304_48 = vectp_measurements.304_45 + 16;\
+\
+src/lab1.cpp:25:58: note: add new stmt: MEM[(long long unsigned int * *)vectp_measurements.304_48] = vect_cst_.302_42;\
+\
+src/lab1.cpp:25:58: note: add new stmt: vectp_measurements.304_50 = vectp_measurements.304_48 + 16;\
+\
+src/lab1.cpp:25:58: note: add new stmt: MEM[(long long unsigned int * *)vectp_measurements.304_50] = vect_cst_.301_41;\
+\
+src/lab1.cpp:25:58: note: vectorizing stmts using SLP.\
+src/lab1.cpp:25:58: note: ------>vectorizing statement: MEM[(struct _Vector_impl *)_21]._M_finish = 0B;\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing statement: MEM[(long long unsigned int * *)vectp_measurements.304_45] = vect_cst_.303_43;\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing statement: vectp_measurements.304_48 = vectp_measurements.304_45 + 16;\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing statement: MEM[(long long unsigned int * *)vectp_measurements.304_48] = vect_cst_.302_42;\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing statement: vectp_measurements.304_50 = vectp_measurements.304_48 + 16;\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing statement: MEM[(long long unsigned int * *)vectp_measurements.304_50] = vect_cst_.301_41;\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing statement: _4 = _21 + 24;\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing statement: _6 = _22 + -1;\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing statement: ivtmp_5 = ivtmp_3 - 1;\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing statement: vectp_measurements.304_46 = vectp_measurements.304_50 + 16;\
+\
+src/lab1.cpp:25:58: note: ------>vectorizing statement: if (ivtmp_5 != 0)\
+\
+\
+loop at /share/apps/gcc/4.9.0/include/c++/4.9.0/bits/stl_vector.h:87: if (ivtmp_14 < 6)\
+\
+src/lab1.cpp:25:58: note: LOOP VECTORIZED\
+\
+src/lab1.cpp:143:1: note: vectorized 1 loops in function.\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/iostream:74:25: note: ===vect_slp_analyze_bb===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/iostream:74:25: note: === vect_analyze_data_refs ===\
+/share/apps/gcc/4.9.0/include/c++/4.9.0/iostream:74:25: note: not vectorized: not enough data-refs in basic block.\
+g++ -O3 -Wall -Wextra -std=c++11 -fopenmp -ftree-vectorize -fopt-info-vec-all  -o bin/lab1 build/lab1.o}

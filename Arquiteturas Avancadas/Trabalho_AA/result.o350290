@@ -1,0 +1,228 @@
+Loading Modules...
+Done Loading Modules!
+Making Project...
+rm -f build/* bin/* 
+g++ -M -Wall -Wextra -std=c++11 -L /share/apps/papi/5.3.2/lib -I /share/apps/papi/5.3.2/include -lpapi  src/trabAAGrupo6.cpp -o build/trabAAGrupo6.d
+g++ -c -Wall -Wextra -std=c++11 -L /share/apps/papi/5.3.2/lib -I /share/apps/papi/5.3.2/include -lpapi  src/trabAAGrupo6.cpp -o build/trabAAGrupo6.o
+g++ -Wall -Wextra -std=c++11 -L /share/apps/papi/5.3.2/lib -I /share/apps/papi/5.3.2/include -lpapi  -o bin/trabAAGrupo6 build/trabAAGrupo6.o
+Done Making Project!
+Going to run...
+
+
+
+******************************************************* RESULTS TO K-J-I ORIGINAL *******************************************************
+
+
+	------------------------------ EXECUTION: 1 ------------------------------
+	CPI: 0.460998
+	Total CPU cycles (#CC): 2610747.000000
+	Total executed instructions (#I): 5663252.000000
+	Ttotal Floating point instructions (#FP): 221232.000000
+	Percentage of Miss Rate on L1: !!! PAPI_L1_TCA NOT AVAILABLE at compute-431 @ SeARCH
+	Percentage of Miss Rate on L2: 0.214286
+	Percentage of Miss Rate on L3: 418853564017.428589
+	#Acesses on RAM per instruction: 0.741896
+	Execution time of K-J-I original: 981483 microseconds.
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 2 ------------------------------
+	CPI: 0.456186
+	Total CPU cycles (#CC): 2582723.000000
+	Total executed instructions (#I): 5661558.000000
+	Ttotal Floating point instructions (#FP): 221223.000000
+	Percentage of Miss Rate on L1: !!! PAPI_L1_TCA NOT AVAILABLE at compute-431 @ SeARCH
+	Percentage of Miss Rate on L2: 0.152882
+	Percentage of Miss Rate on L3: 769042609343.475464
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I original: 970948 microseconds.
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 3 ------------------------------
+	CPI: 0.456256
+	Total CPU cycles (#CC): 2583121.000000
+	Total executed instructions (#I): 5661559.000000
+	Ttotal Floating point instructions (#FP): 221218.000000
+	Percentage of Miss Rate on L1: !!! PAPI_L1_TCA NOT AVAILABLE at compute-431 @ SeARCH
+	Percentage of Miss Rate on L2: 0.124036
+	Percentage of Miss Rate on L3: 729195842019.979248
+	#Acesses on RAM per instruction: 0.742117
+	Execution time of K-J-I original: 971098 microseconds.
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 4 ------------------------------
+	CPI: 0.456546
+	Total CPU cycles (#CC): 2584762.000000
+	Total executed instructions (#I): 5661558.000000
+	Ttotal Floating point instructions (#FP): 221231.000000
+	Percentage of Miss Rate on L1: !!! PAPI_L1_TCA NOT AVAILABLE at compute-431 @ SeARCH
+	Percentage of Miss Rate on L2: 0.135820
+	Percentage of Miss Rate on L3: 729195842019.979248
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I original: 971715 microseconds.
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 5 ------------------------------
+	CPI: 0.456288
+	Total CPU cycles (#CC): 2583303.000000
+	Total executed instructions (#I): 5661558.000000
+	Ttotal Floating point instructions (#FP): 221226.000000
+	Percentage of Miss Rate on L1: !!! PAPI_L1_TCA NOT AVAILABLE at compute-431 @ SeARCH
+	Percentage of Miss Rate on L2: 0.120370
+	Percentage of Miss Rate on L3: 902146137883.692261
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I original: 971166 microseconds.
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 6 ------------------------------
+	CPI: 0.456136
+	Total CPU cycles (#CC): 2582442.000000
+	Total executed instructions (#I): 5661558.000000
+	Ttotal Floating point instructions (#FP): 221218.000000
+	Percentage of Miss Rate on L1: !!! PAPI_L1_TCA NOT AVAILABLE at compute-431 @ SeARCH
+	Percentage of Miss Rate on L2: 0.139844
+	Percentage of Miss Rate on L3: 786227919049.474854
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I original: 970842 microseconds.
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 7 ------------------------------
+	CPI: 0.456158
+	Total CPU cycles (#CC): 2582563.000000
+	Total executed instructions (#I): 5661558.000000
+	Ttotal Floating point instructions (#FP): 221225.000000
+	Percentage of Miss Rate on L1: !!! PAPI_L1_TCA NOT AVAILABLE at compute-431 @ SeARCH
+	Percentage of Miss Rate on L2: 0.131120
+	Percentage of Miss Rate on L3: 890726566518.075928
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I original: 970888 microseconds.
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 8 ------------------------------
+	CPI: 0.456213
+	Total CPU cycles (#CC): 2582878.000000
+	Total executed instructions (#I): 5661558.000000
+	Ttotal Floating point instructions (#FP): 221230.000000
+	Percentage of Miss Rate on L1: !!! PAPI_L1_TCA NOT AVAILABLE at compute-431 @ SeARCH
+	Percentage of Miss Rate on L2: 0.162963
+	Percentage of Miss Rate on L3: 710781805605.333374
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I original: 971006 microseconds.
+	--------------------------------------------------------------------------
+
+
+
+
+******************************************************* RESULTS TO K-J-I TRANSPOSED *******************************************************
+
+
+	------------------------------ EXECUTION: 1 ------------------------------
+	CPI calculated: 0.456256
+	Total CPU cycles (#CC): 2583122.000000
+	Total executed instructions (#I): 5661558.000000
+	Total Floating point instructions (#FP): 221244.000000
+	Percentage of Miss Rate on L1: !!! --> PAPI_L1_TCA <--  NOT AVAILABLE on compute-431 @ SeARCH !!!
+	Percentage of Miss Rate on L2: 0.106472
+	Percentage of Miss Rate on L3: 919835277842.196045
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I transposta: 971098 microseconds
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 2 ------------------------------
+	CPI calculated: 0.455892
+	Total CPU cycles (#CC): 2581058.000000
+	Total executed instructions (#I): 5661557.000000
+	Total Floating point instructions (#FP): 221213.000000
+	Percentage of Miss Rate on L1: !!! --> PAPI_L1_TCA <--  NOT AVAILABLE on compute-431 @ SeARCH !!!
+	Percentage of Miss Rate on L2: 0.088288
+	Percentage of Miss Rate on L3: 1436069362345.469482
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I transposta: 970322 microseconds
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 3 ------------------------------
+	CPI calculated: 0.455921
+	Total CPU cycles (#CC): 2581221.000000
+	Total executed instructions (#I): 5661558.000000
+	Total Floating point instructions (#FP): 221228.000000
+	Percentage of Miss Rate on L1: !!! --> PAPI_L1_TCA <--  NOT AVAILABLE on compute-431 @ SeARCH !!!
+	Percentage of Miss Rate on L2: 0.077187
+	Percentage of Miss Rate on L3: 1563719972331.733398
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I transposta: 970383 microseconds
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 4 ------------------------------
+	CPI calculated: 0.456141
+	Total CPU cycles (#CC): 2582470.000000
+	Total executed instructions (#I): 5661558.000000
+	Total Floating point instructions (#FP): 221226.000000
+	Percentage of Miss Rate on L1: !!! --> PAPI_L1_TCA <--  NOT AVAILABLE on compute-431 @ SeARCH !!!
+	Percentage of Miss Rate on L2: 0.104167
+	Percentage of Miss Rate on L3: 907966435547.458008
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I transposta: 970853 microseconds
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 5 ------------------------------
+	CPI calculated: 0.455930
+	Total CPU cycles (#CC): 2581276.000000
+	Total executed instructions (#I): 5661558.000000
+	Total Floating point instructions (#FP): 221219.000000
+	Percentage of Miss Rate on L1: !!! --> PAPI_L1_TCA <--  NOT AVAILABLE on compute-431 @ SeARCH !!!
+	Percentage of Miss Rate on L2: 0.096055
+	Percentage of Miss Rate on L3: 1256560692052.285645
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I transposta: 970404 microseconds
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 6 ------------------------------
+	CPI calculated: 0.455802
+	Total CPU cycles (#CC): 2580547.000000
+	Total executed instructions (#I): 5661558.000000
+	Total Floating point instructions (#FP): 221205.000000
+	Percentage of Miss Rate on L1: !!! --> PAPI_L1_TCA <--  NOT AVAILABLE on compute-431 @ SeARCH !!!
+	Percentage of Miss Rate on L2: 0.090035
+	Percentage of Miss Rate on L3: 1366357257377.242676
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I transposta: 970130 microseconds
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 7 ------------------------------
+	CPI calculated: 0.455908
+	Total CPU cycles (#CC): 2581150.000000
+	Total executed instructions (#I): 5661558.000000
+	Total Floating point instructions (#FP): 221215.000000
+	Percentage of Miss Rate on L1: !!! --> PAPI_L1_TCA <--  NOT AVAILABLE on compute-431 @ SeARCH !!!
+	Percentage of Miss Rate on L2: 0.125202
+	Percentage of Miss Rate on L3: 907966435547.458008
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I transposta: 970357 microseconds
+	--------------------------------------------------------------------------
+
+
+	------------------------------ EXECUTION: 8 ------------------------------
+	CPI calculated: 0.456045
+	Total CPU cycles (#CC): 2581926.000000
+	Total executed instructions (#I): 5661558.000000
+	Total Floating point instructions (#FP): 221226.000000
+	Percentage of Miss Rate on L1: !!! --> PAPI_L1_TCA <--  NOT AVAILABLE on compute-431 @ SeARCH !!!
+	Percentage of Miss Rate on L2: 0.116801
+	Percentage of Miss Rate on L3: 1082575365460.430786
+	#Acesses on RAM per instruction: 0.742118
+	Execution time of K-J-I transposta: 970648 microseconds
+	--------------------------------------------------------------------------
+
+Done Running!
