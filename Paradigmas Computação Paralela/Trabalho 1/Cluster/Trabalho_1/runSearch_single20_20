@@ -1,0 +1,60 @@
+## FICHEIRO MODELO PBS CRIADO PARA A DISCIPLINA DE CPD::PCP
+# FONTE: http://qcd.phys.cmu.edu/QCDcluster/pbs/run_serial.html
+## GRUPO: Joao Lopes, Miguel Lopes 
+
+#!/bin/sh
+
+#PBS -N result
+#PBS -l walltime=00:15:00
+#PBS -q mei
+
+#PBS -m abe
+#PBS -M joao.miguelop@gmail.com
+
+#PBS -lnodes=1:ppn=32:r641
+
+echo "Loading Modules..."
+module purge
+module load gnu/4.9.0
+echo "Done Loading Modules!"
+
+echo "Making Project..."
+cd ~/Paradigmas_Computacao_Paralela/Trabalho_1/
+make clean
+make
+echo "Done Making Project!"
+
+read -r node_info<$PBS_NODEFILE
+echo "Allocated computing node: $node_info"
+
+
+
+sample_size=1
+max_matrix_size=20
+max_n_max=8000
+max_ppn=24
+
+for((matrix_size=20; matrix_size <= $max_matrix_size; matrix_size+=matrix_size))
+do
+	echo "Matrix Size: $matrix_size"
+	for((n_max=8000; n_max <= $max_n_max; n_max = n_max*2))
+	do
+		##echo "Running $sample_size * sequential code for N_MAX=$n_max"
+		##for((seq_num=1; seq_num <= $sample_size; ++seq_num))
+		##do
+		##	./bin/trabalho_PCP_1_seq $matrix_size $n_max
+		##done
+		for((num_threads=24; num_threads <= $max_ppn; num_threads+=2))
+		do	
+			echo "Running $sample_size * $num_threads - threads parallel code for N_MAX=$n_max"
+			for((seq_num=1; seq_num <= $sample_size; ++seq_num))
+			do
+				./bin/trabalho_PCP_1_parallel_v2 $matrix_size $n_max $num_threads
+			done
+		done
+	done
+done
+echo "Done..."
+
+
+

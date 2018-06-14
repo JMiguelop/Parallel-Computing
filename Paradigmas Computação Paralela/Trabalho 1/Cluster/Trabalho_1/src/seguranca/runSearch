@@ -1,0 +1,32 @@
+## FICHEIRO MODELO PBS CRIADO PARA A DISCIPLINA DE CPD::PCP
+# FONTE: http://qcd.phys.cmu.edu/QCDcluster/pbs/run_serial.html
+## GRUPO: Joao Lopes, Miguel Lopes 
+
+#!/bin/sh
+
+#PBS -N result
+#PBS -l walltime=01:30:00
+#PBS -q mei
+
+#PBS -m abe
+#PBS -M joao.miguelop@gmail.com
+
+#PBS -lnodes=1:ppn=24:r431:m12
+
+echo "Loading Modules..."
+module purge
+module load gnu/4.9.0
+echo "Done Loading Modules!"
+
+echo "Making Project..."
+cd ~/Paradigmas_Computacao_Paralela/Trabalho_1/
+make clean
+make
+echo "Done Making Project!"
+
+read -r node_info<$PBS_NODEFILE
+echo "Allocated computing node: $node_info"
+
+echo "Going to run..."
+./bin/trabalho_PCP_1 $tam
+echo "Done Running!"

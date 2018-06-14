@@ -1,0 +1,16 @@
+Loading Modules...
+Done Loading Modules!
+Making Project...
+rm -f build/* bin/* 
+gcc -c -O3 -Wall -Wextra -std=c99 -fopenmp  src/heatDiff_Seq.c -o build/heatDiff_Seq.o
+gcc -M -O3 -Wall -Wextra -std=c99 -fopenmp  src/heatDiff_Seq.c -o build/heatDiff_Seq.d
+gcc -O3 -Wall -Wextra -std=c99 -fopenmp  -o bin/trabalho_PCP_1_seq build/heatDiff_Seq.o
+gcc -c -O3 -Wall -Wextra -std=c99 -fopenmp  src/heatDiff_Par.c -o build/heatDiff_Par.o
+gcc -M -O3 -Wall -Wextra -std=c99 -fopenmp  src/heatDiff_Par.c -o build/heatDiff_Par.d
+gcc -O3 -Wall -Wextra -std=c99 -fopenmp  -o bin/trabalho_PCP_1_parallel_v2 build/heatDiff_Par.o
+Done Making Project!
+Allocated computing node: compute-641-3
+Matrix Size: 20
+Running 1 * 24 - threads parallel code for N_MAX=8000
+Time par: 80.968 ms
+Done...

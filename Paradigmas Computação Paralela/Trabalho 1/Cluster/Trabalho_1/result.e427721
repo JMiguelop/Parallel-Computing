@@ -1,0 +1,8 @@
+src/heatDiff_Seq.c: In function 'main':
+src/heatDiff_Seq.c:65:14: warning: unused parameter 'argc' [-Wunused-parameter]
+ int main(int argc, char *argv[]) {
+              ^
+src/heatDiff_Par.c: In function 'main':
+src/heatDiff_Par.c:73:14: warning: unused parameter 'argc' [-Wunused-parameter]
+ int main(int argc, char *argv[]) {
+              ^

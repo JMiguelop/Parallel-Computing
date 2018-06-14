@@ -1,0 +1,433 @@
+Loading Modules...
+Done Loading Modules!
+Making Project...
+rm -f build/* bin/* 
+gcc -c -O3 -Wall -Wextra -std=c99 -fopenmp  src/heatDiff_Seq.c -o build/heatDiff_Seq.o
+gcc -M -O3 -Wall -Wextra -std=c99 -fopenmp  src/heatDiff_Seq.c -o build/heatDiff_Seq.d
+gcc -O3 -Wall -Wextra -std=c99 -fopenmp  -o bin/trabalho_PCP_1_seq build/heatDiff_Seq.o
+gcc -c -O3 -Wall -Wextra -std=c99 -fopenmp  src/heatDiff_Par.c -o build/heatDiff_Par.o
+gcc -M -O3 -Wall -Wextra -std=c99 -fopenmp  src/heatDiff_Par.c -o build/heatDiff_Par.d
+gcc -O3 -Wall -Wextra -std=c99 -fopenmp  -o bin/trabalho_PCP_1_parallel build/heatDiff_Par.o
+Done Making Project!
+Allocated computing node: compute-641-8
+Matrix Size: 1024
+Running 1 * sequential code for N_MAX=1000
+Time seq: 1551.904 ms
+Running 1 * 2 - threads parallel code for N_MAX=1000
+Time par: 1003.346 ms
+Running 1 * 4 - threads parallel code for N_MAX=1000
+Time par: 629.359 ms
+Running 1 * 6 - threads parallel code for N_MAX=1000
+Time par: 481.186 ms
+Running 1 * 8 - threads parallel code for N_MAX=1000
+Time par: 416.713 ms
+Running 1 * 10 - threads parallel code for N_MAX=1000
+Time par: 391.122 ms
+Running 1 * 12 - threads parallel code for N_MAX=1000
+Time par: 362.655 ms
+Running 1 * 14 - threads parallel code for N_MAX=1000
+Time par: 366.842 ms
+Running 1 * 16 - threads parallel code for N_MAX=1000
+Time par: 357.173 ms
+Running 1 * 18 - threads parallel code for N_MAX=1000
+Time par: 364.761 ms
+Running 1 * 20 - threads parallel code for N_MAX=1000
+Time par: 371.072 ms
+Running 1 * 22 - threads parallel code for N_MAX=1000
+Time par: 358.602 ms
+Running 1 * 24 - threads parallel code for N_MAX=1000
+Time par: 358.410 ms
+Running 1 * sequential code for N_MAX=2000
+Time seq: 2651.030 ms
+Running 1 * 2 - threads parallel code for N_MAX=2000
+Time par: 1888.910 ms
+Running 1 * 4 - threads parallel code for N_MAX=2000
+Time par: 1266.701 ms
+Running 1 * 6 - threads parallel code for N_MAX=2000
+Time par: 1109.219 ms
+Running 1 * 8 - threads parallel code for N_MAX=2000
+Time par: 1032.906 ms
+Running 1 * 10 - threads parallel code for N_MAX=2000
+Time par: 990.457 ms
+Running 1 * 12 - threads parallel code for N_MAX=2000
+Time par: 936.333 ms
+Running 1 * 14 - threads parallel code for N_MAX=2000
+Time par: 894.026 ms
+Running 1 * 16 - threads parallel code for N_MAX=2000
+Time par: 901.947 ms
+Running 1 * 18 - threads parallel code for N_MAX=2000
+Time par: 895.663 ms
+Running 1 * 20 - threads parallel code for N_MAX=2000
+Time par: 909.564 ms
+Running 1 * 22 - threads parallel code for N_MAX=2000
+Time par: 884.301 ms
+Running 1 * 24 - threads parallel code for N_MAX=2000
+Time par: 883.423 ms
+Running 1 * sequential code for N_MAX=4000
+Time seq: 5705.429 ms
+Running 1 * 2 - threads parallel code for N_MAX=4000
+Time par: 4903.473 ms
+Running 1 * 4 - threads parallel code for N_MAX=4000
+Time par: 3203.942 ms
+Running 1 * 6 - threads parallel code for N_MAX=4000
+Time par: 2994.840 ms
+Running 1 * 8 - threads parallel code for N_MAX=4000
+Time par: 2606.455 ms
+Running 1 * 10 - threads parallel code for N_MAX=4000
+Time par: 2428.118 ms
+Running 1 * 12 - threads parallel code for N_MAX=4000
+Time par: 2333.177 ms
+Running 1 * 14 - threads parallel code for N_MAX=4000
+Time par: 2279.152 ms
+Running 1 * 16 - threads parallel code for N_MAX=4000
+Time par: 2327.634 ms
+Running 1 * 18 - threads parallel code for N_MAX=4000
+Time par: 2293.144 ms
+Running 1 * 20 - threads parallel code for N_MAX=4000
+Time par: 2225.301 ms
+Running 1 * 22 - threads parallel code for N_MAX=4000
+Time par: 2126.374 ms
+Running 1 * 24 - threads parallel code for N_MAX=4000
+Time par: 2139.179 ms
+Running 1 * sequential code for N_MAX=8000
+Time seq: 12614.995 ms
+Running 1 * 2 - threads parallel code for N_MAX=8000
+Time par: 10368.873 ms
+Running 1 * 4 - threads parallel code for N_MAX=8000
+Time par: 8418.503 ms
+Running 1 * 6 - threads parallel code for N_MAX=8000
+Time par: 7002.280 ms
+Running 1 * 8 - threads parallel code for N_MAX=8000
+Time par: 6316.452 ms
+Running 1 * 10 - threads parallel code for N_MAX=8000
+Time par: 6162.336 ms
+Running 1 * 12 - threads parallel code for N_MAX=8000
+Time par: 5795.737 ms
+Running 1 * 14 - threads parallel code for N_MAX=8000
+Time par: 5685.639 ms
+Running 1 * 16 - threads parallel code for N_MAX=8000
+Time par: 5536.685 ms
+Running 1 * 18 - threads parallel code for N_MAX=8000
+Time par: 5534.618 ms
+Running 1 * 20 - threads parallel code for N_MAX=8000
+Time par: 5279.782 ms
+Running 1 * 22 - threads parallel code for N_MAX=8000
+Time par: 5275.847 ms
+Running 1 * 24 - threads parallel code for N_MAX=8000
+Time par: 5065.876 ms
+Matrix Size: 2048
+Running 1 * sequential code for N_MAX=1000
+Time seq: 6705.539 ms
+Running 1 * 2 - threads parallel code for N_MAX=1000
+Time par: 2900.253 ms
+Running 1 * 4 - threads parallel code for N_MAX=1000
+Time par: 1792.309 ms
+Running 1 * 6 - threads parallel code for N_MAX=1000
+Time par: 1432.133 ms
+Running 1 * 8 - threads parallel code for N_MAX=1000
+Time par: 1231.881 ms
+Running 1 * 10 - threads parallel code for N_MAX=1000
+Time par: 1120.853 ms
+Running 1 * 12 - threads parallel code for N_MAX=1000
+Time par: 1049.455 ms
+Running 1 * 14 - threads parallel code for N_MAX=1000
+Time par: 999.976 ms
+Running 1 * 16 - threads parallel code for N_MAX=1000
+Time par: 1066.039 ms
+Running 1 * 18 - threads parallel code for N_MAX=1000
+Time par: 1098.814 ms
+Running 1 * 20 - threads parallel code for N_MAX=1000
+Time par: 1056.370 ms
+Running 1 * 22 - threads parallel code for N_MAX=1000
+Time par: 1082.112 ms
+Running 1 * 24 - threads parallel code for N_MAX=1000
+Time par: 943.290 ms
+Running 1 * sequential code for N_MAX=2000
+Time seq: 17611.092 ms
+Running 1 * 2 - threads parallel code for N_MAX=2000
+Time par: 7476.855 ms
+Running 1 * 4 - threads parallel code for N_MAX=2000
+Time par: 4652.284 ms
+Running 1 * 6 - threads parallel code for N_MAX=2000
+Time par: 3611.190 ms
+Running 1 * 8 - threads parallel code for N_MAX=2000
+Time par: 3213.054 ms
+Running 1 * 10 - threads parallel code for N_MAX=2000
+Time par: 2699.612 ms
+Running 1 * 12 - threads parallel code for N_MAX=2000
+Time par: 2480.882 ms
+Running 1 * 14 - threads parallel code for N_MAX=2000
+Time par: 2325.437 ms
+Running 1 * 16 - threads parallel code for N_MAX=2000
+Time par: 2340.910 ms
+Running 1 * 18 - threads parallel code for N_MAX=2000
+Time par: 2457.636 ms
+Running 1 * 20 - threads parallel code for N_MAX=2000
+Time par: 2516.940 ms
+Running 1 * 22 - threads parallel code for N_MAX=2000
+Time par: 2380.993 ms
+Running 1 * 24 - threads parallel code for N_MAX=2000
+Time par: 2336.661 ms
+Running 1 * sequential code for N_MAX=4000
+Time seq: 35847.241 ms
+Running 1 * 2 - threads parallel code for N_MAX=4000
+Time par: 15909.037 ms
+Running 1 * 4 - threads parallel code for N_MAX=4000
+Time par: 8821.048 ms
+Running 1 * 6 - threads parallel code for N_MAX=4000
+Time par: 7752.670 ms
+Running 1 * 8 - threads parallel code for N_MAX=4000
+Time par: 6739.509 ms
+Running 1 * 10 - threads parallel code for N_MAX=4000
+Time par: 6316.998 ms
+Running 1 * 12 - threads parallel code for N_MAX=4000
+Time par: 5908.101 ms
+Running 1 * 14 - threads parallel code for N_MAX=4000
+Time par: 5747.976 ms
+Running 1 * 16 - threads parallel code for N_MAX=4000
+Time par: 5753.600 ms
+Running 1 * 18 - threads parallel code for N_MAX=4000
+Time par: 6148.554 ms
+Running 1 * 20 - threads parallel code for N_MAX=4000
+Time par: 5794.621 ms
+Running 1 * 22 - threads parallel code for N_MAX=4000
+Time par: 5819.135 ms
+Running 1 * 24 - threads parallel code for N_MAX=4000
+Time par: 5678.253 ms
+Running 1 * sequential code for N_MAX=8000
+Time seq: 76970.775 ms
+Running 1 * 2 - threads parallel code for N_MAX=8000
+Time par: 35507.039 ms
+Running 1 * 4 - threads parallel code for N_MAX=8000
+Time par: 21156.347 ms
+Running 1 * 6 - threads parallel code for N_MAX=8000
+Time par: 17985.053 ms
+Running 1 * 8 - threads parallel code for N_MAX=8000
+Time par: 16386.459 ms
+Running 1 * 10 - threads parallel code for N_MAX=8000
+Time par: 15673.827 ms
+Running 1 * 12 - threads parallel code for N_MAX=8000
+Time par: 14729.818 ms
+Running 1 * 14 - threads parallel code for N_MAX=8000
+Time par: 14049.191 ms
+Running 1 * 16 - threads parallel code for N_MAX=8000
+Time par: 14508.239 ms
+Running 1 * 18 - threads parallel code for N_MAX=8000
+Time par: 14260.046 ms
+Running 1 * 20 - threads parallel code for N_MAX=8000
+Time par: 13939.447 ms
+Running 1 * 22 - threads parallel code for N_MAX=8000
+Time par: 15285.188 ms
+Running 1 * 24 - threads parallel code for N_MAX=8000
+Time par: 13890.995 ms
+Matrix Size: 4096
+Running 1 * sequential code for N_MAX=1000
+Time seq: 27495.882 ms
+Running 1 * 2 - threads parallel code for N_MAX=1000
+Time par: 17997.604 ms
+Running 1 * 4 - threads parallel code for N_MAX=1000
+Time par: 11277.254 ms
+Running 1 * 6 - threads parallel code for N_MAX=1000
+Time par: 9700.616 ms
+Running 1 * 8 - threads parallel code for N_MAX=1000
+Time par: 9655.980 ms
+Running 1 * 10 - threads parallel code for N_MAX=1000
+Time par: 9180.728 ms
+Running 1 * 12 - threads parallel code for N_MAX=1000
+Time par: 9373.269 ms
+Running 1 * 14 - threads parallel code for N_MAX=1000
+Time par: 9576.276 ms
+Running 1 * 16 - threads parallel code for N_MAX=1000
+Time par: 9841.561 ms
+Running 1 * 18 - threads parallel code for N_MAX=1000
+Time par: 9853.240 ms
+Running 1 * 20 - threads parallel code for N_MAX=1000
+Time par: 9587.452 ms
+Running 1 * 22 - threads parallel code for N_MAX=1000
+Time par: 9557.819 ms
+Running 1 * 24 - threads parallel code for N_MAX=1000
+Time par: 9535.045 ms
+Running 1 * sequential code for N_MAX=2000
+Time seq: 67101.656 ms
+Running 1 * 2 - threads parallel code for N_MAX=2000
+Time par: 33621.163 ms
+Running 1 * 4 - threads parallel code for N_MAX=2000
+Time par: 22113.856 ms
+Running 1 * 6 - threads parallel code for N_MAX=2000
+Time par: 19980.774 ms
+Running 1 * 8 - threads parallel code for N_MAX=2000
+Time par: 19482.919 ms
+Running 1 * 10 - threads parallel code for N_MAX=2000
+Time par: 19109.485 ms
+Running 1 * 12 - threads parallel code for N_MAX=2000
+Time par: 19218.781 ms
+Running 1 * 14 - threads parallel code for N_MAX=2000
+Time par: 18364.945 ms
+Running 1 * 16 - threads parallel code for N_MAX=2000
+Time par: 19825.100 ms
+Running 1 * 18 - threads parallel code for N_MAX=2000
+Time par: 19706.526 ms
+Running 1 * 20 - threads parallel code for N_MAX=2000
+Time par: 19584.417 ms
+Running 1 * 22 - threads parallel code for N_MAX=2000
+Time par: 19471.976 ms
+Running 1 * 24 - threads parallel code for N_MAX=2000
+Time par: 18790.281 ms
+Running 1 * sequential code for N_MAX=4000
+Time seq: 148321.930 ms
+Running 1 * 2 - threads parallel code for N_MAX=4000
+Time par: 72081.295 ms
+Running 1 * 4 - threads parallel code for N_MAX=4000
+Time par: 47811.072 ms
+Running 1 * 6 - threads parallel code for N_MAX=4000
+Time par: 42550.500 ms
+Running 1 * 8 - threads parallel code for N_MAX=4000
+Time par: 39967.809 ms
+Running 1 * 10 - threads parallel code for N_MAX=4000
+Time par: 39362.201 ms
+Running 1 * 12 - threads parallel code for N_MAX=4000
+Time par: 39708.895 ms
+Running 1 * 14 - threads parallel code for N_MAX=4000
+Time par: 39213.516 ms
+Running 1 * 16 - threads parallel code for N_MAX=4000
+Time par: 42872.289 ms
+Running 1 * 18 - threads parallel code for N_MAX=4000
+Time par: 39961.155 ms
+Running 1 * 20 - threads parallel code for N_MAX=4000
+Time par: 40665.580 ms
+Running 1 * 22 - threads parallel code for N_MAX=4000
+Time par: 41136.980 ms
+Running 1 * 24 - threads parallel code for N_MAX=4000
+Time par: 40672.839 ms
+Running 1 * sequential code for N_MAX=8000
+Time seq: 294494.758 ms
+Running 1 * 2 - threads parallel code for N_MAX=8000
+Time par: 151651.070 ms
+Running 1 * 4 - threads parallel code for N_MAX=8000
+Time par: 103850.835 ms
+Running 1 * 6 - threads parallel code for N_MAX=8000
+Time par: 90306.575 ms
+Running 1 * 8 - threads parallel code for N_MAX=8000
+Time par: 79928.264 ms
+Running 1 * 10 - threads parallel code for N_MAX=8000
+Time par: 91650.129 ms
+Running 1 * 12 - threads parallel code for N_MAX=8000
+Time par: 83034.474 ms
+Running 1 * 14 - threads parallel code for N_MAX=8000
+Time par: 80505.417 ms
+Running 1 * 16 - threads parallel code for N_MAX=8000
+Time par: 90230.570 ms
+Running 1 * 18 - threads parallel code for N_MAX=8000
+Time par: 85844.439 ms
+Running 1 * 20 - threads parallel code for N_MAX=8000
+Time par: 84826.697 ms
+Running 1 * 22 - threads parallel code for N_MAX=8000
+Time par: 79838.995 ms
+Running 1 * 24 - threads parallel code for N_MAX=8000
+Time par: 83260.806 ms
+Matrix Size: 8192
+Running 1 * sequential code for N_MAX=1000
+Time seq: 99155.322 ms
+Running 1 * 2 - threads parallel code for N_MAX=1000
+Time par: 68253.600 ms
+Running 1 * 4 - threads parallel code for N_MAX=1000
+Time par: 41529.055 ms
+Running 1 * 6 - threads parallel code for N_MAX=1000
+Time par: 36127.681 ms
+Running 1 * 8 - threads parallel code for N_MAX=1000
+Time par: 35376.710 ms
+Running 1 * 10 - threads parallel code for N_MAX=1000
+Time par: 34451.845 ms
+Running 1 * 12 - threads parallel code for N_MAX=1000
+Time par: 34598.737 ms
+Running 1 * 14 - threads parallel code for N_MAX=1000
+Time par: 35306.380 ms
+Running 1 * 16 - threads parallel code for N_MAX=1000
+Time par: 38689.116 ms
+Running 1 * 18 - threads parallel code for N_MAX=1000
+Time par: 39939.683 ms
+Running 1 * 20 - threads parallel code for N_MAX=1000
+Time par: 37291.254 ms
+Running 1 * 22 - threads parallel code for N_MAX=1000
+Time par: 36976.416 ms
+Running 1 * 24 - threads parallel code for N_MAX=1000
+Time par: 37585.827 ms
+Running 1 * sequential code for N_MAX=2000
+Time seq: 275572.822 ms
+Running 1 * 2 - threads parallel code for N_MAX=2000
+Time par: 138810.715 ms
+Running 1 * 4 - threads parallel code for N_MAX=2000
+Time par: 84026.680 ms
+Running 1 * 6 - threads parallel code for N_MAX=2000
+Time par: 72277.577 ms
+Running 1 * 8 - threads parallel code for N_MAX=2000
+Time par: 72291.137 ms
+Running 1 * 10 - threads parallel code for N_MAX=2000
+Time par: 74157.751 ms
+Running 1 * 12 - threads parallel code for N_MAX=2000
+Time par: 71858.265 ms
+Running 1 * 14 - threads parallel code for N_MAX=2000
+Time par: 72245.940 ms
+Running 1 * 16 - threads parallel code for N_MAX=2000
+Time par: 80389.576 ms
+Running 1 * 18 - threads parallel code for N_MAX=2000
+Time par: 79003.830 ms
+Running 1 * 20 - threads parallel code for N_MAX=2000
+Time par: 77356.277 ms
+Running 1 * 22 - threads parallel code for N_MAX=2000
+Time par: 76686.094 ms
+Running 1 * 24 - threads parallel code for N_MAX=2000
+Time par: 75951.218 ms
+Running 1 * sequential code for N_MAX=4000
+Time seq: 622577.989 ms
+Running 1 * 2 - threads parallel code for N_MAX=4000
+Time par: 285748.467 ms
+Running 1 * 4 - threads parallel code for N_MAX=4000
+Time par: 168989.366 ms
+Running 1 * 6 - threads parallel code for N_MAX=4000
+Time par: 148801.237 ms
+Running 1 * 8 - threads parallel code for N_MAX=4000
+Time par: 144504.389 ms
+Running 1 * 10 - threads parallel code for N_MAX=4000
+Time par: 135245.044 ms
+Running 1 * 12 - threads parallel code for N_MAX=4000
+Time par: 146249.965 ms
+Running 1 * 14 - threads parallel code for N_MAX=4000
+Time par: 145693.463 ms
+Running 1 * 16 - threads parallel code for N_MAX=4000
+Time par: 152960.716 ms
+Running 1 * 18 - threads parallel code for N_MAX=4000
+Time par: 151938.656 ms
+Running 1 * 20 - threads parallel code for N_MAX=4000
+Time par: 152602.797 ms
+Running 1 * 22 - threads parallel code for N_MAX=4000
+Time par: 148817.017 ms
+Running 1 * 24 - threads parallel code for N_MAX=4000
+Time par: 146936.903 ms
+Running 1 * sequential code for N_MAX=8000
+Time seq: 1108701.053 ms
+Running 1 * 2 - threads parallel code for N_MAX=8000
+Time par: 531168.379 ms
+Running 1 * 4 - threads parallel code for N_MAX=8000
+Time par: 355472.716 ms
+Running 1 * 6 - threads parallel code for N_MAX=8000
+Time par: 300444.050 ms
+Running 1 * 8 - threads parallel code for N_MAX=8000
+Time par: 240299.330 ms
+Running 1 * 10 - threads parallel code for N_MAX=8000
+Time par: 321978.842 ms
+Running 1 * 12 - threads parallel code for N_MAX=8000
+Time par: 281833.817 ms
+Running 1 * 14 - threads parallel code for N_MAX=8000
+Time par: 293020.581 ms
+Running 1 * 16 - threads parallel code for N_MAX=8000
+Time par: 328870.617 ms
+Running 1 * 18 - threads parallel code for N_MAX=8000
+Time par: 327745.207 ms
+Running 1 * 20 - threads parallel code for N_MAX=8000
+Time par: 319480.117 ms
+Running 1 * 22 - threads parallel code for N_MAX=8000
+Time par: 329611.190 ms
+Running 1 * 24 - threads parallel code for N_MAX=8000
+Time par: 312137.647 ms
+Done...
